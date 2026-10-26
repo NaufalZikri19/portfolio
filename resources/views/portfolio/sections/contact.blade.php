@@ -35,7 +35,7 @@
                     <span
                         class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-bright/60 border border-white/5">
                         <span class="material-symbols-outlined text-xs text-primary">location_on</span>
-                        JL. Sungai Tami Dok VIII Atas &bull; Banyumas
+                        Purwokerto, Banyumas
                     </span>
                     <span
                         class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-bright/60 border border-white/5">

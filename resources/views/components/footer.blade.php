@@ -65,7 +65,6 @@
     <div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-4">
         <p class="font-body-md text-xs text-on-surface-variant/50">&copy; 2026 Naufal Zikri Hilmy. Hak cipta dilindungi.
         </p>
-        <p class="font-body-md text-xs text-on-surface-variant/50">JL. Sungai Tami Dok VIII Atas &bull; Purwokerto
-            Selatan, Banyumas</p>
+        <p class="font-body-md text-xs text-on-surface-variant/50">Purwokerto, Banyumas</p>
     </div>
 </footer>

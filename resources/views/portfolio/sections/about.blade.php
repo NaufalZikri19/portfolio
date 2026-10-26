@@ -164,8 +164,7 @@
                             <span
                                 class="font-label-mono text-[10px] sm:text-[11px] text-on-surface-variant uppercase tracking-wider block">Domisili
                                 &amp; Lokasi</span>
-                            <span class="font-body-md text-xs sm:text-sm font-semibold text-on-surface">Purwokerto
-                                Selatan,
+                            <span class="font-body-md text-xs sm:text-sm font-semibold text-on-surface">Purwokerto,
                                 Banyumas</span>
                         </div>
                     </div>
