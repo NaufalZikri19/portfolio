@@ -21,10 +21,31 @@
                     <span class="text-primary">luar biasa bersama.</span>
                 </h2>
 
-                <p class="font-body-md text-on-surface-variant mb-10 max-w-xl mx-auto leading-relaxed">
-                    Punya ide proyek, membutuhkan konsultasi software &amp; sistem ERP, atau sekadar ingin berdiskusi?
-                    Jangan ragu untuk menghubungi saya langsung melalui platform di bawah.
+                <p class="font-body-md text-on-surface-variant mb-6 max-w-xl mx-auto leading-relaxed">
+                    Punya ide proyek, peluang magang &amp; kerja sama, membutuhkan konsultasi software &amp; sistem ERP,
+                    atau sekadar ingin berdiskusi?
+                    Jangan ragu untuk menghubungi saya langsung melalui kontak di bawah.
                 </p>
+
+                <!-- Quick info badges -->
+                <div
+                    class="flex flex-wrap items-center justify-center gap-2.5 text-xs font-label-mono text-on-surface-variant mb-10">
+                    <span
+                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-bright/60 border border-white/5">
+                        <span class="material-symbols-outlined text-xs text-primary">location_on</span>
+                        JL. Sungai Tami Dok VIII Atas &bull; Banyumas
+                    </span>
+                    <span
+                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-bright/60 border border-white/5">
+                        <span class="material-symbols-outlined text-xs text-primary">call</span>
+                        082198487319
+                    </span>
+                    <span
+                        class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-bright/60 border border-white/5">
+                        <span class="material-symbols-outlined text-xs text-primary">mail</span>
+                        naufal.zikri19@gmail.com
+                    </span>
+                </div>
 
                 <!-- Primary Action Buttons: WhatsApp & Email -->
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">

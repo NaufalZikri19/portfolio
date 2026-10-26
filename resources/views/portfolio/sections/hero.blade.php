@@ -9,18 +9,20 @@
         <div class="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-surface/50 backdrop-blur-md reveal-up"
             style="transition-delay: 100ms">
             <span class="material-symbols-outlined text-primary text-sm"
-                style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="font-label-mono text-label-mono text-on-surface-variant">Siap Menerima Proyek</span>
+                style="font-variation-settings: 'FILL' 1;">verified</span>
+            <span class="font-label-mono text-label-mono text-on-surface-variant">Web Developer Tersertifikasi BNSP
+                &bull; Terbuka untuk Peluang Kerja</span>
         </div>
         <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 max-w-4xl mx-auto leading-tight reveal-up"
             style="transition-delay: 200ms">
-            Spesialis Sistem Informasi &amp; <br class="hidden md:block" /> <span class="text-primary">Software
+            Sistem Informasi, Web &amp; <br class="hidden md:block" /> <span class="text-primary">AI Integration
                 Engineer</span>
         </h1>
         <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 reveal-up"
             style="transition-delay: 300ms">
-            Halo, saya Naufal seorang software engineer yang berfokus membangun solusi teknologi terukur dan berkinerja
-            tinggi. Saya membantu bisnis dan institusi mengembangkan sistem digital yang membawa dampak nyata.
+            Halo! Saya <strong class="text-on-surface font-semibold">Naufal Zikri Hilmy</strong>, lulusan S1 Sistem
+            Informasi dari Universitas Telkom Purwokerto (IPK 3.82). Berfokus membangun aplikasi web modern berbasis
+            Laravel &amp; MySQL, integrasi Artificial Intelligence (AI), dan arsitektur sistem ERP Odoo yang terukur.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 mb-20 justify-center reveal-up" style="transition-delay: 400ms">
             <a class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-primary text-on-primary font-body-md font-bold hover:bg-secondary hover:scale-95 transition-all duration-300"
@@ -29,7 +31,7 @@
             </a>
             <a class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-surface-container/50 text-on-surface border border-outline-variant hover:border-primary/50 font-body-md font-semibold glass-panel glass-panel-hover hover:scale-95 transition-all duration-300"
                 href="#projects">
-                Lihat Karya
+                Lihat Proyek
             </a>
         </div>
 

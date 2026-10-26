@@ -5,11 +5,13 @@
         <!-- Brand -->
         <div class="font-display-sm text-2xl font-bold text-on-surface">NZH<span class="text-primary">.</span></div>
         <!-- Links -->
-        <div class="flex gap-6 text-sm text-on-surface-variant font-body-md">
+        <div class="flex flex-wrap justify-center gap-6 text-sm text-on-surface-variant font-body-md">
             <a class="hover:text-primary transition-colors" href="#">Beranda</a>
-            <a class="hover:text-primary transition-colors" href="#services">Layanan</a>
+            <a class="hover:text-primary transition-colors" href="#about">Tentang</a>
+            <a class="hover:text-primary transition-colors" href="#experience">Pengalaman</a>
             <a class="hover:text-primary transition-colors" href="#projects">Proyek</a>
-            <a class="hover:text-primary transition-colors" href="#process">Alur Kerja</a>
+            <a class="hover:text-primary transition-colors" href="#techstack">Tech Stack</a>
+            <a class="hover:text-primary transition-colors" href="#contact">Kontak</a>
         </div>
         <!-- Socials -->
         <div class="flex items-center gap-2.5">
@@ -60,7 +62,9 @@
         </div>
     </div>
     <div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="font-body-md text-xs text-on-surface-variant/50">&copy; 2026 Naufal Zikri. Hak cipta dilindungi.</p>
-        <p class="font-body-md text-xs text-on-surface-variant/50">Purwokerto, Indonesia</p>
+        <p class="font-body-md text-xs text-on-surface-variant/50">&copy; 2026 Naufal Zikri Hilmy. Hak cipta dilindungi.
+        </p>
+        <p class="font-body-md text-xs text-on-surface-variant/50">JL. Sungai Tami Dok VIII Atas &bull; Purwokerto
+            Selatan, Banyumas</p>
     </div>
 </footer>

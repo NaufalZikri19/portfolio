@@ -8,11 +8,11 @@ $projectsData = [
         'subtitle' => 'Sistem Reservasi Lapangan Tenis',
         'category' => 'Aplikasi Web',
         'image' => 'images/gumbreg.png',
-        'overview' => 'GumbregQuickBook adalah aplikasi web khusus yang dirancang untuk mempermudah alur pemesanan dan pengelolaan jadwal lapangan tenis. Platform ini meniadakan risiko jadwal bentrok (double-booking) dan memberikan pengalaman yang mudah serta cepat, baik bagi pengelola maupun pemain.',
-        'challenge' => 'Klub olahraga lokal sebelumnya mengelola pemesanan lapangan secara manual melalui pesan instan dan buku catatan fisik. Hal ini sering menimbulkan konflik jadwal ganda, keterlambatan konfirmasi pembayaran, serta kesulitan memantau tingkat okupansi lapangan secara efektif.',
-        'solution' => 'Saya mengembangkan sistem web dengan fitur kalender reservasi real-time, validasi slot otomatis untuk mencegah konflik jadwal, serta manajemen akses berbasis peran (RBAC). Sisi backend menangani logika ketersediaan waktu yang ketat guna memastikan akurasi data pemesanan hingga 100%.',
-        'impact' => 'Menghilangkan konflik pemesanan jadwal hingga 0%. Pemanfaatan lapangan meningkat sebesar 40% dan menghemat beban kerja administrasi pengelola hingga 20 jam per minggu.',
-        'tech' => ['Laravel', 'Blade', 'Tailwind CSS', 'JavaScript']
+        'overview' => 'GumbregQuickBook adalah aplikasi web khusus yang dirancang untuk mempermudah alur pemesanan dan pengelolaan jadwal lapangan tenis secara end-to-end. Platform ini dilengkapi asisten cerdas berbasis Google Gemini AI Chatbot untuk menjawab pertanyaan pengunjung, meniadakan risiko jadwal bentrok (double-booking), serta memberikan alur reservasi yang instan.',
+        'challenge' => 'Klub olahraga lokal sebelumnya mengelola pemesanan lapangan secara manual melalui pesan instan dan buku catatan fisik. Hal ini sering menimbulkan konflik jadwal ganda, keterlambatan konfirmasi, serta tingginya beban admin dalam melayani pertanyaan umum berulang kali.',
+        'solution' => 'Saya merancang sistem web dari tahap arsitektur hingga deployment, mencakup pengembangan fitur berbasis Laravel & MySQL, kalender reservasi real-time, manajemen akses (RBAC), serta integrasi Google Gemini AI Chatbot untuk layanan tanya-jawab otomatis dan interaktif.',
+        'impact' => 'Menghilangkan konflik jadwal hingga 0%, memangkas beban tanya-jawab admin hingga 60% berkat Google Gemini AI Chatbot, dan mendongkrak efisiensi reservasi secara menyeluruh.',
+        'tech' => ['Laravel', 'MySQL', 'Google Gemini AI', 'Tailwind CSS', 'JavaScript']
     ],
     'sirimby' => [
         'title' => 'Sirimby - Fresh Milk',

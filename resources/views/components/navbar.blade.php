@@ -18,14 +18,18 @@
                     class="absolute h-9 bg-surface-bright/80 rounded-full transition-all duration-300 ease-out z-0 opacity-0">
                 </div>
 
-                <a class="nav-link relative z-10 px-6 py-1.5 text-primary font-semibold font-body-md transition-colors duration-300"
+                <a class="nav-link relative z-10 px-5 py-1.5 text-primary font-semibold font-body-md transition-colors duration-300"
                     href="#">Beranda</a>
-                <a class="nav-link relative z-10 px-6 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
-                    href="#services">Layanan</a>
-                <a class="nav-link relative z-10 px-6 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
+                <a class="nav-link relative z-10 px-5 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
+                    href="#about">Tentang</a>
+                <a class="nav-link relative z-10 px-5 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
+                    href="#experience">Pengalaman</a>
+                <a class="nav-link relative z-10 px-5 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
                     href="#projects">Proyek</a>
-                <a class="nav-link relative z-10 px-6 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
-                    href="#process">Alur Kerja</a>
+                <a class="nav-link relative z-10 px-5 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
+                    href="#techstack">Tech Stack</a>
+                <a class="nav-link relative z-10 px-5 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
+                    href="#services">Layanan</a>
             @else
                 <a class="relative z-10 px-6 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300 flex items-center gap-2"
                     href="{{ url('/') }}">
@@ -52,17 +56,21 @@
 
 <!-- Mobile Menu Overlay -->
 <div id="mobile-menu"
-    class="fixed inset-0 bg-black/95 backdrop-blur-xl z-40 flex flex-col justify-center items-center gap-8 opacity-0 pointer-events-none transition-all duration-300 md:hidden">
+    class="fixed inset-0 bg-black/95 backdrop-blur-xl z-40 flex flex-col justify-center items-center gap-7 opacity-0 pointer-events-none transition-all duration-300 md:hidden">
     @if(request()->is('/'))
-        <a class="mobile-nav-link text-2xl text-on-surface hover:text-primary font-headline-md transition-colors"
+        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors"
             href="#">Beranda</a>
-        <a class="mobile-nav-link text-2xl text-on-surface hover:text-primary font-headline-md transition-colors"
+        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors"
+            href="#about">Tentang Saya</a>
+        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors"
+            href="#experience">Pengalaman &amp; Edukasi</a>
+        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors"
+            href="#projects">Karya Proyek</a>
+        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors"
+            href="#techstack">Tech Stack</a>
+        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors"
             href="#services">Layanan</a>
-        <a class="mobile-nav-link text-2xl text-on-surface hover:text-primary font-headline-md transition-colors"
-            href="#projects">Proyek</a>
-        <a class="mobile-nav-link text-2xl text-on-surface hover:text-primary font-headline-md transition-colors"
-            href="#process">Alur Kerja</a>
-        <a class="inline-flex mt-4 items-center justify-center px-8 py-3 rounded-full bg-primary text-on-primary font-body-lg font-bold hover:opacity-90 transition-all duration-300 mobile-nav-link"
+        <a class="inline-flex mt-2 items-center justify-center px-8 py-3 rounded-full bg-primary text-on-primary font-body-lg font-bold hover:opacity-90 transition-all duration-300 mobile-nav-link"
             href="#contact">
             Hubungi Saya
         </a>

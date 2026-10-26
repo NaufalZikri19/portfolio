@@ -17,15 +17,18 @@
                     <h3
                         class="font-headline-sm text-headline-sm text-on-surface mb-2 group-hover:text-primary transition-colors">
                         Sistem Reservasi Lapangan Tenis</h3>
-                    <p class="font-body-md text-on-surface-variant text-sm mb-8">Platform berbasis web untuk kemudahan
-                        reservasi jadwal dan manajemen lapangan olahraga secara real-time.</p>
+                    <p class="font-body-md text-on-surface-variant text-sm mb-8">Sistem reservasi online end-to-end
+                        terintegrasi kueri basis data MySQL, manajemen slot real-time, dan asisten cerdas Google Gemini
+                        AI Chatbot.</p>
 
                     <div class="flex flex-wrap gap-2 mb-10">
                         <span
                             class="bg-surface-bright text-on-surface-variant px-3 py-1.5 rounded-full font-label-mono text-xs">Laravel</span>
                         <span
-                            class="bg-surface-bright text-on-surface-variant px-3 py-1.5 rounded-full font-label-mono text-xs">Tailwind
-                            CSS</span>
+                            class="bg-surface-bright text-on-surface-variant px-3 py-1.5 rounded-full font-label-mono text-xs">MySQL</span>
+                        <span
+                            class="bg-primary/10 text-primary border border-primary/30 px-3 py-1.5 rounded-full font-label-mono text-xs font-semibold">Gemini
+                            AI</span>
                     </div>
 
                     <a class="inline-flex items-center text-primary font-semibold font-body-md group/link mt-auto"
