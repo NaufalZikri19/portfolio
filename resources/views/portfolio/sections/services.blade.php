@@ -8,15 +8,17 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Service 1 -->
-            <div class="glass-panel rounded-2xl p-8 flex flex-col group glass-panel-hover h-80 relative overflow-hidden reveal-up"
+            <div class="glass-panel rounded-2xl p-6 sm:p-8 flex flex-col group glass-panel-hover min-h-[18rem] md:h-80 relative overflow-hidden reveal-up"
                 style="transition-delay: 100ms">
                 <!-- Subtle bottom glow -->
                 <div
                     class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-32 h-32 bg-primary/20 rounded-full blur-2xl">
                 </div>
                 <div class="relative z-10">
-                    <h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Sistem Enterprise &amp; ERP</h3>
-                    <p class="font-body-md text-on-surface-variant text-sm mb-6">Mulai dari implementasi Odoo ERP
+                    <h3 class="font-headline-sm text-lg sm:text-headline-sm text-on-surface mb-2 sm:mb-3">Sistem
+                        Enterprise &amp; ERP</h3>
+                    <p class="font-body-md text-on-surface-variant text-xs sm:text-sm mb-6">Mulai dari implementasi Odoo
+                        ERP
                         terpadu hingga aplikasi manajemen internal kustom untuk mengotomatiskan proses bisnis yang
                         kompleks.</p>
                 </div>
@@ -28,15 +30,17 @@
                 </div>
             </div>
             <!-- Service 2 -->
-            <div class="glass-panel rounded-2xl p-8 flex flex-col group glass-panel-hover h-80 relative overflow-hidden reveal-up"
+            <div class="glass-panel rounded-2xl p-6 sm:p-8 flex flex-col group glass-panel-hover min-h-[18rem] md:h-80 relative overflow-hidden reveal-up"
                 style="transition-delay: 200ms">
                 <!-- Subtle bottom glow -->
                 <div
                     class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-32 h-32 bg-primary/20 rounded-full blur-2xl">
                 </div>
                 <div class="relative z-10">
-                    <h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Aplikasi Web Full-Stack</h3>
-                    <p class="font-body-md text-on-surface-variant text-sm mb-6">Membangun website dan aplikasi web
+                    <h3 class="font-headline-sm text-lg sm:text-headline-sm text-on-surface mb-2 sm:mb-3">Aplikasi Web
+                        Full-Stack</h3>
+                    <p class="font-body-md text-on-surface-variant text-xs sm:text-sm mb-6">Membangun website dan
+                        aplikasi web
                         modern yang responsif, berkecepatan tinggi, serta integrasi frontend dan backend yang seamless.
                     </p>
                 </div>
@@ -48,15 +52,17 @@
                 </div>
             </div>
             <!-- Service 3 -->
-            <div class="glass-panel rounded-2xl p-8 flex flex-col group glass-panel-hover h-80 relative overflow-hidden reveal-up"
+            <div class="glass-panel rounded-2xl p-6 sm:p-8 flex flex-col group glass-panel-hover min-h-[18rem] md:h-80 relative overflow-hidden reveal-up"
                 style="transition-delay: 300ms">
                 <!-- Subtle bottom glow -->
                 <div
                     class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-32 h-32 bg-primary/20 rounded-full blur-2xl">
                 </div>
                 <div class="relative z-10">
-                    <h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Visualisasi Data &amp; AI</h3>
-                    <p class="font-body-md text-on-surface-variant text-sm mb-6">Mengembangkan dashboard analitik
+                    <h3 class="font-headline-sm text-lg sm:text-headline-sm text-on-surface mb-2 sm:mb-3">Visualisasi
+                        Data &amp; AI</h3>
+                    <p class="font-body-md text-on-surface-variant text-xs sm:text-sm mb-6">Mengembangkan dashboard
+                        analitik
                         interaktif untuk menyajikan model machine learning dan data operasional secara jelas dan
                         bernilai bisnis.</p>
                 </div>

@@ -1,7 +1,7 @@
 <!-- 8. Contact Section -->
 <section class="py-section-gap relative" id="contact">
     <div class="max-w-4xl mx-auto px-gutter relative z-10 text-center reveal-up">
-        <div class="glass-panel rounded-3xl p-12 md:p-20 relative overflow-hidden group">
+        <div class="glass-panel rounded-3xl p-6 sm:p-12 md:p-20 relative overflow-hidden group">
             <!-- Background accents -->
             <div class="absolute top-0 left-0 w-full h-full bg-primary/5"></div>
             <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl opacity-50"></div>
@@ -16,12 +16,14 @@
                         untuk Kolaborasi</span>
                 </div>
 
-                <h2 class="font-headline-md text-3xl md:text-5xl text-on-surface mb-6 font-bold leading-tight">
+                <h2
+                    class="font-headline-md text-2xl sm:text-3xl md:text-5xl text-on-surface mb-4 sm:mb-6 font-bold leading-tight">
                     Mari bangun sesuatu yang <br class="hidden sm:block" />
                     <span class="text-primary">luar biasa bersama.</span>
                 </h2>
 
-                <p class="font-body-md text-on-surface-variant mb-6 max-w-xl mx-auto leading-relaxed">
+                <p
+                    class="font-body-md text-xs sm:text-sm md:text-base text-on-surface-variant mb-6 max-w-xl mx-auto leading-relaxed">
                     Punya ide proyek, peluang magang &amp; kerja sama, membutuhkan konsultasi software &amp; sistem ERP,
                     atau sekadar ingin berdiskusi?
                     Jangan ragu untuk menghubungi saya langsung melalui kontak di bawah.

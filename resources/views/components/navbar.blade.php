@@ -10,7 +10,7 @@
         </a>
         <!-- Navigation Links (Desktop) - Centered Exactly -->
         <nav id="desktop-nav"
-            class="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center bg-surface-container/30 px-2 py-1.5 rounded-full border border-white/5 z-10">
+            class="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center bg-surface-container/30 px-2 py-1.5 rounded-full border border-white/5 z-10">
 
             @if(request()->is('/'))
                 <!-- Sliding Active Indicator -->
@@ -18,17 +18,17 @@
                     class="absolute h-9 bg-surface-bright/80 rounded-full transition-all duration-300 ease-out z-0 opacity-0">
                 </div>
 
-                <a class="nav-link relative z-10 px-5 py-1.5 text-primary font-semibold font-body-md transition-colors duration-300"
+                <a class="nav-link relative z-10 px-4 xl:px-5 py-1.5 text-primary font-semibold font-body-md text-xs xl:text-sm whitespace-nowrap transition-colors duration-300"
                     href="#">Beranda</a>
-                <a class="nav-link relative z-10 px-5 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
+                <a class="nav-link relative z-10 px-4 xl:px-5 py-1.5 text-on-surface-variant font-body-md text-xs xl:text-sm whitespace-nowrap hover:text-primary transition-colors duration-300"
                     href="#about">Tentang</a>
-                <a class="nav-link relative z-10 px-5 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
+                <a class="nav-link relative z-10 px-4 xl:px-5 py-1.5 text-on-surface-variant font-body-md text-xs xl:text-sm whitespace-nowrap hover:text-primary transition-colors duration-300"
                     href="#experience">Pengalaman</a>
-                <a class="nav-link relative z-10 px-5 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
+                <a class="nav-link relative z-10 px-4 xl:px-5 py-1.5 text-on-surface-variant font-body-md text-xs xl:text-sm whitespace-nowrap hover:text-primary transition-colors duration-300"
                     href="#projects">Proyek</a>
-                <a class="nav-link relative z-10 px-5 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
+                <a class="nav-link relative z-10 px-4 xl:px-5 py-1.5 text-on-surface-variant font-body-md text-xs xl:text-sm whitespace-nowrap hover:text-primary transition-colors duration-300"
                     href="#techstack">Tech Stack</a>
-                <a class="nav-link relative z-10 px-5 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300"
+                <a class="nav-link relative z-10 px-4 xl:px-5 py-1.5 text-on-surface-variant font-body-md text-xs xl:text-sm whitespace-nowrap hover:text-primary transition-colors duration-300"
                     href="#services">Layanan</a>
             @else
                 <a class="relative z-10 px-6 py-1.5 text-on-surface-variant font-body-md hover:text-primary transition-colors duration-300 flex items-center gap-2"
@@ -39,7 +39,7 @@
         </nav>
         <!-- Trailing Action & Mobile Menu Toggle -->
         <div class="flex items-center z-10">
-            <div class="hidden md:block">
+            <div class="hidden lg:block">
                 <a class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary text-on-primary font-body-md font-bold hover:opacity-90 hover:scale-95 transition-all duration-300"
                     href="{{ request()->is('/') ? '#contact' : url('/#contact') }}">
                     Hubungi Saya
@@ -47,8 +47,8 @@
             </div>
             <!-- Mobile Menu Toggle -->
             <button id="mobile-menu-toggle"
-                class="md:hidden text-on-surface hover:text-primary transition-colors relative">
-                <span class="material-symbols-outlined text-3xl">menu</span>
+                class="lg:hidden text-on-surface hover:text-primary transition-colors relative w-10 h-10 flex items-center justify-center rounded-xl bg-surface-bright/40 border border-white/5 focus:outline-none">
+                <span class="material-symbols-outlined text-2xl">menu</span>
             </button>
         </div>
     </div>
@@ -56,26 +56,26 @@
 
 <!-- Mobile Menu Overlay -->
 <div id="mobile-menu"
-    class="fixed inset-0 bg-black/95 backdrop-blur-xl z-40 flex flex-col justify-center items-center gap-7 opacity-0 pointer-events-none transition-all duration-300 md:hidden">
+    class="fixed inset-0 bg-black/95 backdrop-blur-xl z-40 flex flex-col justify-center items-center gap-5 p-6 overflow-y-auto opacity-0 pointer-events-none transition-all duration-300 lg:hidden">
     @if(request()->is('/'))
-        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors"
+        <a class="mobile-nav-link text-lg text-on-surface hover:text-primary font-headline-md transition-colors py-1.5 px-4 rounded-full"
             href="#">Beranda</a>
-        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors"
+        <a class="mobile-nav-link text-lg text-on-surface hover:text-primary font-headline-md transition-colors py-1.5 px-4 rounded-full"
             href="#about">Tentang Saya</a>
-        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors"
+        <a class="mobile-nav-link text-lg text-on-surface hover:text-primary font-headline-md transition-colors py-1.5 px-4 rounded-full"
             href="#experience">Pengalaman &amp; Edukasi</a>
-        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors"
+        <a class="mobile-nav-link text-lg text-on-surface hover:text-primary font-headline-md transition-colors py-1.5 px-4 rounded-full"
             href="#projects">Karya Proyek</a>
-        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors"
+        <a class="mobile-nav-link text-lg text-on-surface hover:text-primary font-headline-md transition-colors py-1.5 px-4 rounded-full"
             href="#techstack">Tech Stack</a>
-        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors"
+        <a class="mobile-nav-link text-lg text-on-surface hover:text-primary font-headline-md transition-colors py-1.5 px-4 rounded-full"
             href="#services">Layanan</a>
-        <a class="inline-flex mt-2 items-center justify-center px-8 py-3 rounded-full bg-primary text-on-primary font-body-lg font-bold hover:opacity-90 transition-all duration-300 mobile-nav-link"
+        <a class="inline-flex mt-3 items-center justify-center px-8 py-3 rounded-full bg-primary text-on-primary font-body-md font-bold hover:opacity-90 transition-all duration-300 mobile-nav-link shadow-lg shadow-primary/20"
             href="#contact">
             Hubungi Saya
         </a>
     @else
-        <a class="mobile-nav-link text-2xl text-on-surface hover:text-primary font-headline-md transition-colors flex items-center gap-2"
+        <a class="mobile-nav-link text-xl text-on-surface hover:text-primary font-headline-md transition-colors flex items-center gap-2"
             href="{{ url('/') }}">
             <span class="material-symbols-outlined">arrow_back</span> Kembali ke Portofolio
         </a>

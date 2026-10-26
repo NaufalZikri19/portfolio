@@ -32,7 +32,7 @@
                 </div>
 
                 <!-- Job Card: Telkom Witel Papua -->
-                <div class="glass-panel rounded-2xl p-6 md:p-8 border border-white/5 hover:border-primary/40 transition-all duration-300 relative overflow-hidden group reveal-up"
+                <div class="glass-panel rounded-2xl p-5 sm:p-6 md:p-8 border border-white/5 hover:border-primary/40 transition-all duration-300 relative overflow-hidden group reveal-up"
                     style="transition-delay: 100ms">
                     <div class="flex flex-wrap items-start justify-between gap-2 mb-4">
                         <div>
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <span
-                            class="px-3 py-1 rounded-full bg-surface-bright border border-white/10 font-label-mono text-xs text-on-surface-variant">
+                            class="px-2.5 sm:px-3 py-1 rounded-full bg-surface-bright border border-white/10 font-label-mono text-[11px] sm:text-xs text-on-surface-variant">
                             Juli 2021 &ndash; Sept 2021
                         </span>
                     </div>
@@ -103,12 +103,12 @@
                 </div>
 
                 <!-- National Certification Card -->
-                <div class="glass-panel rounded-2xl p-6 md:p-8 border border-primary/30 bg-surface-bright/20 hover:border-primary/50 transition-all duration-300 relative overflow-hidden group reveal-up"
+                <div class="glass-panel rounded-2xl p-5 sm:p-6 md:p-8 border border-primary/30 bg-surface-bright/20 hover:border-primary/50 transition-all duration-300 relative overflow-hidden group reveal-up"
                     style="transition-delay: 200ms">
-                    <div class="flex items-start justify-between gap-4 mb-3">
+                    <div class="flex items-start justify-between gap-3 mb-3">
                         <div class="flex items-center gap-3">
                             <div
-                                class="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary">
+                                class="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary shrink-0">
                                 <span class="material-symbols-outlined text-xl">workspace_premium</span>
                             </div>
                             <div>
@@ -125,7 +125,8 @@
                             Juni 2026
                         </span>
                     </div>
-                    <div class="text-xs text-on-surface-variant font-body-md pl-13">
+                    <div
+                        class="text-xs text-on-surface-variant font-body-md leading-relaxed mt-2 pt-2 border-t border-white/5">
                         Diterbitkan oleh <strong class="text-on-surface">Badan Nasional Sertifikasi Profesi (BNSP) /
                             Lembaga Sertifikasi Profesi Informatika</strong> pada sub-bidang Pengembangan Perangkat
                         Lunak dan Pemrograman Web.
@@ -148,7 +149,7 @@
                 </div>
 
                 <!-- Education 1: Telkom University Purwokerto -->
-                <div class="glass-panel rounded-2xl p-6 md:p-8 border border-white/5 hover:border-primary/40 transition-all duration-300 relative overflow-hidden group reveal-up"
+                <div class="glass-panel rounded-2xl p-5 sm:p-6 md:p-8 border border-white/5 hover:border-primary/40 transition-all duration-300 relative overflow-hidden group reveal-up"
                     style="transition-delay: 150ms">
                     <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
                         <div>
@@ -167,7 +168,7 @@
                             </div>
                         </div>
                         <span
-                            class="px-3 py-1 rounded-full bg-surface-bright border border-white/10 font-label-mono text-xs text-on-surface-variant">
+                            class="px-2.5 sm:px-3 py-1 rounded-full bg-surface-bright border border-white/10 font-label-mono text-[11px] sm:text-xs text-on-surface-variant">
                             2022 &ndash; 2026
                         </span>
                     </div>
@@ -195,7 +196,7 @@
                 </div>
 
                 <!-- Education 2: SMK Hikmah Yapis Jayapura -->
-                <div class="glass-panel rounded-2xl p-6 md:p-8 border border-white/5 hover:border-primary/40 transition-all duration-300 relative overflow-hidden group reveal-up"
+                <div class="glass-panel rounded-2xl p-5 sm:p-6 md:p-8 border border-white/5 hover:border-primary/40 transition-all duration-300 relative overflow-hidden group reveal-up"
                     style="transition-delay: 250ms">
                     <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
                         <div>
@@ -211,7 +212,7 @@
                             </div>
                         </div>
                         <span
-                            class="px-3 py-1 rounded-full bg-surface-bright border border-white/10 font-label-mono text-xs text-on-surface-variant">
+                            class="px-2.5 sm:px-3 py-1 rounded-full bg-surface-bright border border-white/10 font-label-mono text-[11px] sm:text-xs text-on-surface-variant">
                             2019 &ndash; 2022
                         </span>
                     </div>

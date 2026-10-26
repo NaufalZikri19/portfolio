@@ -5,7 +5,8 @@
         <!-- Brand -->
         <div class="font-display-sm text-2xl font-bold text-on-surface">NZH<span class="text-primary">.</span></div>
         <!-- Links -->
-        <div class="flex flex-wrap justify-center gap-6 text-sm text-on-surface-variant font-body-md">
+        <div
+            class="flex flex-wrap justify-center gap-x-5 gap-y-2.5 text-xs sm:text-sm text-on-surface-variant font-body-md">
             <a class="hover:text-primary transition-colors" href="#">Beranda</a>
             <a class="hover:text-primary transition-colors" href="#about">Tentang</a>
             <a class="hover:text-primary transition-colors" href="#experience">Pengalaman</a>
