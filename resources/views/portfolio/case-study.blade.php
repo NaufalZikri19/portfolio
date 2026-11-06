@@ -20,12 +20,22 @@
                 style="transition-delay: 300ms">
                 {{ $project['subtitle'] }}
             </p>
-            <div class="flex flex-wrap justify-center gap-2 mb-10 reveal-up" style="transition-delay: 400ms">
+            <div class="flex flex-wrap justify-center gap-2 mb-8 reveal-up" style="transition-delay: 400ms">
                 @foreach($project['tech'] as $tech)
                     <span
                         class="bg-surface-bright text-on-surface-variant px-4 py-2 rounded-full font-label-mono text-sm border border-white/5">{{ $tech }}</span>
                 @endforeach
             </div>
+            @if(!empty($project['url']))
+                <div class="reveal-up mb-6" style="transition-delay: 450ms">
+                    <a href="{{ $project['url'] }}" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-primary/20 text-primary border border-primary/30 hover:bg-primary hover:text-on-primary font-body-md font-semibold text-sm transition-all duration-300">
+                        <span class="material-symbols-outlined text-base">language</span>
+                        <span>Kunjungi Website Proyek</span>
+                        <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+            @endif
         </div>
     </section>
 
@@ -33,8 +43,15 @@
         <div class="max-w-5xl mx-auto px-gutter reveal-up">
             <div
                 class="rounded-3xl overflow-hidden shadow-2xl border border-white/5 bg-surface-bright/30 p-2 backdrop-blur-sm">
-                <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}"
-                    class="w-full h-auto rounded-2xl object-cover" />
+                @if(!empty($project['url']))
+                    <a href="{{ $project['url'] }}" target="_blank" rel="noopener noreferrer" class="block relative group cursor-pointer" title="Buka website proyek">
+                        <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}"
+                            class="w-full h-auto rounded-2xl object-cover transition-transform duration-700 group-hover:scale-[1.01]" />
+                    </a>
+                @else
+                    <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}"
+                        class="w-full h-auto rounded-2xl object-cover" />
+                @endif
             </div>
         </div>
     </section>
@@ -95,10 +112,19 @@
     <section class="py-16 relative text-center border-t border-white/5 bg-surface-bright/20">
         <div class="max-w-2xl mx-auto px-gutter reveal-up">
             <h3 class="font-headline-md text-2xl text-on-surface mb-6">Tertarik membangun sistem serupa?</h3>
-            <a class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-primary text-on-primary font-body-md font-bold hover:bg-secondary hover:scale-95 transition-all duration-300"
-                href="{{ url('/#contact') }}">
-                Hubungi Saya
-            </a>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a class="inline-flex items-center justify-center px-8 py-3 rounded-full bg-primary text-on-primary font-body-md font-bold hover:bg-secondary hover:scale-95 transition-all duration-300"
+                    href="{{ url('/#contact') }}">
+                    Hubungi Saya
+                </a>
+                @if(!empty($project['url']))
+                    <a class="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-surface-bright text-on-surface hover:text-primary border border-white/10 hover:border-primary/40 font-body-md font-semibold hover:scale-95 transition-all duration-300"
+                        href="{{ $project['url'] }}" target="_blank" rel="noopener noreferrer">
+                        <span>Kunjungi Website</span>
+                        <span class="material-symbols-outlined text-base">open_in_new</span>
+                    </a>
+                @endif
+            </div>
         </div>
     </section>
 @endsection
