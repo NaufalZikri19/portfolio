@@ -1,257 +1,323 @@
-<!-- 1. Hero Section -->
-<section class="relative min-h-screen flex items-center overflow-hidden" id="hero">
+<!-- 1. Hero Section (Dark Editorial / High-Contrast Technical Showcase) -->
+<section class="relative min-h-screen flex flex-col justify-center overflow-hidden bg-background pt-28 sm:pt-32 pb-16" id="hero">
 
-    <!-- Canvas Particle Background -->
-    <canvas id="hero-particles" class="absolute inset-0 z-0 w-full h-full pointer-events-none"></canvas>
+    <!-- Subtle canvas particle network -->
+    <canvas id="hero-particles" class="absolute inset-0 z-0 w-full h-full pointer-events-none opacity-30"></canvas>
 
-    <!-- Radial gradient overlay -->
+    <!-- Editorial subtle grid background overlay -->
     <div
-        class="absolute inset-0 z-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(0,229,115,0.08)_0%,transparent_70%)]">
+        class="absolute inset-0 z-0 bg-[linear-gradient(to_right,#1c222d0d_1px,transparent_1px),linear-gradient(to_bottom,#1c222d0d_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_30%,#000_70%,transparent_100%)] pointer-events-none">
     </div>
 
-    <!-- Animated glow orbs -->
+    <!-- Radial vignette (Warm Off-White editorial glow) -->
     <div
-        class="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px] pointer-events-none z-0 animate-[orb-float_8s_ease-in-out_infinite]">
-    </div>
-    <div
-        class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-primary/5 blur-[120px] pointer-events-none z-0 animate-[orb-float_10s_ease-in-out_infinite_reverse]">
+        class="absolute inset-0 z-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_20%,rgba(251,249,244,0.03)_0%,transparent_70%)] pointer-events-none">
     </div>
 
-    <!-- Content -->
-    <div
-        class="max-w-container-max mx-auto px-gutter relative z-10 w-full flex flex-col items-center text-center pt-28 sm:pt-32 pb-16">
+    <div class="max-w-container-max mx-auto px-gutter relative z-10 w-full flex flex-col">
 
-        <!-- Greeting Line -->
-        <div id="hero-greeting" class="mb-4 sm:mb-5 opacity-0 translate-y-8 transition-all duration-700"
+        <!-- Top Editorial Technical Strip -->
+        <div id="hero-top-strip"
+            class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-8 sm:mb-12 border-b border-[#1c222d] text-xs font-label-mono text-on-surface-subtle opacity-0 translate-y-6 transition-all duration-700"
             style="transition-delay: 100ms;">
-            <span class="font-label-mono text-sm sm:text-base tracking-[0.3em] text-primary uppercase">
-                Halo, Perkenalkan
+            <div class="flex items-center gap-2">
+                <span class="text-primary font-black">▪▪</span>
+                <span class="text-on-surface font-semibold tracking-wider uppercase">PORTFOLIO // 2026 ED.</span>
+                <span class="text-[#2d3545]">•</span>
+                <span>PURWOKERTO, INDONESIA</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#0c0e12] border border-[#1c222d] text-primary text-[11px] font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                    OPEN TO WORK (FULL-TIME &amp; MAGANG)
+                </span>
+                <span class="hidden md:inline text-on-surface-variant font-medium">BNSP CWDev CERTIFIED</span>
+            </div>
+        </div>
+
+        <!-- Main Asymmetrical Hero Grid (Inspired by Reference) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-12 sm:mb-16">
+
+            <!-- Left Editorial Block (Primary Statement & CTAs) -->
+            <div id="hero-left"
+                class="lg:col-span-7 flex flex-col text-left opacity-0 translate-y-6 transition-all duration-700"
+                style="transition-delay: 250ms;">
+                
+                <div class="mb-3 flex items-center gap-2">
+                    <span class="w-2 h-2 bg-primary inline-block"></span>
+                    <span class="font-label-mono text-xs sm:text-sm text-primary uppercase tracking-[0.25em] font-semibold">
+                        SISTEM INFORMASI &amp; REKAYASA WEB
+                    </span>
+                </div>
+
+                <!-- Main Giant Display Headline (Solid White, No Cheap Gradient) -->
+                <h1 id="hero-name"
+                    class="font-headline-md font-black text-4xl sm:text-6xl md:text-7xl lg:text-7xl uppercase text-white tracking-tight leading-[0.96] mb-5">
+                    BUILDING<br />
+                    SYSTEMS THAT<br />
+                    SCALE.
+                </h1>
+
+                <!-- Identity Subheading -->
+                <div class="text-xl sm:text-2xl font-headline-md font-bold text-white mb-4">
+                    Naufal Zikri Hilmy
+                </div>
+
+                <!-- High-contrast Scannable Lead Text -->
+                <p id="hero-desc"
+                    class="font-body-md text-sm sm:text-base md:text-lg text-on-surface-variant max-w-xl leading-relaxed mb-8">
+                    Menjembatani analisis proses bisnis dengan implementasi perangkat lunak end-to-end. Berpengalaman merancang arsitektur aplikasi berbasis <strong class="text-white font-semibold">Laravel &amp; MySQL</strong>, integrasi kecerdasan buatan <strong class="text-white font-semibold">Google Gemini AI</strong>, serta kustomisasi alur <strong class="text-white font-semibold">ERP Odoo</strong>.
+                </p>
+
+                <!-- Action CTA Buttons (Clear, High Contrast, Target >= 48px) -->
+                <div id="hero-cta" class="flex flex-col sm:flex-row gap-3.5 sm:gap-4 items-stretch sm:items-center">
+                    <a class="min-h-[48px] inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-primary text-on-primary font-body-md font-bold text-sm sm:text-base hover:brightness-110 active:scale-95 transition-all duration-200 shadow-[0_0_25px_rgba(251,249,244,0.15)]"
+                        href="#contact">
+                        <span>Hubungi Saya</span>
+                        <span class="material-symbols-outlined text-lg font-bold">arrow_forward</span>
+                    </a>
+                    <a class="min-h-[48px] inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#0c0e12] text-white border border-[#2d3545] hover:border-primary hover:text-primary font-body-md font-semibold text-sm sm:text-base active:scale-95 transition-all duration-200"
+                        href="#projects">
+                        <span>Lihat Proyek Pilihan</span>
+                        <span class="material-symbols-outlined text-lg">folder_open</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Editorial Block (Philosophy & Verified Credential Card) -->
+            <div id="hero-right"
+                class="lg:col-span-5 flex flex-col lg:items-end text-left lg:text-right opacity-0 translate-y-6 transition-all duration-700"
+                style="transition-delay: 400ms;">
+                
+                <!-- Mission Statement -->
+                <div class="mb-6 lg:mb-8">
+                    <div class="flex items-center gap-2 lg:justify-end mb-2">
+                        <span class="font-label-mono text-xs text-on-surface-subtle tracking-widest uppercase">PHILOSOPHY // 01</span>
+                        <span class="w-1.5 h-1.5 bg-white/40"></span>
+                    </div>
+                    <h2 class="font-headline-md font-extrabold text-2xl sm:text-3xl lg:text-4xl uppercase text-white tracking-tight leading-tight">
+                        TURNING<br class="hidden sm:inline" />
+                        COMPLEXITY<br class="hidden sm:inline" />
+                        INTO CLARITY.
+                    </h2>
+                </div>
+
+                <!-- Verified Credential Card (Guaranteed 100% Unclipped, Responsive & Scannable) -->
+                <div class="w-full max-w-md p-5 sm:p-6 rounded-2xl bg-[#0c0e12] border border-[#1c222d] text-left crosshair shadow-2xl relative">
+                    <div class="flex items-center justify-between pb-3 border-b border-[#1c222d] text-xs font-label-mono">
+                        <span class="text-primary font-bold flex items-center gap-1.5 uppercase">
+                            <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+                            STATUS TERVERIFIKASI
+                        </span>
+                        <span class="text-on-surface-subtle uppercase">KREDENSIAL UTAMA</span>
+                    </div>
+
+                    <!-- FIXED ROLE LABEL: Completely intact, never clipped, never truncated -->
+                    <div class="mt-4">
+                        <div class="font-headline-md font-extrabold text-lg sm:text-xl text-white leading-snug break-words">
+                            Fresh Graduate S1 Sistem Informasi
+                        </div>
+                        <div class="font-body-md text-sm text-on-surface-variant mt-1">
+                            Universitas Telkom Purwokerto
+                        </div>
+                    </div>
+
+                    <!-- Detailed Proof Badges & Metrics -->
+                    <div class="mt-5 pt-4 border-t border-[#1c222d] flex flex-col gap-2.5 font-label-mono text-xs">
+                        <div class="flex items-center justify-between">
+                            <span class="text-on-surface-subtle">Indeks Prestasi Kumulatif:</span>
+                            <span class="text-primary font-bold text-sm">3.82 (Dengan Pujian)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-on-surface-subtle">Sertifikasi Kompetensi:</span>
+                            <span class="text-white font-semibold">BNSP Certified Web Developer (CWDev)</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-on-surface-subtle">Proyek Unggulan:</span>
+                            <span class="text-white font-medium">GumbregQuickBook &amp; Sirimby</span>
+                        </div>
+                    </div>
+
+                    <!-- Quick Contact Info -->
+                    <div class="mt-4 pt-3 border-t border-[#1c222d]/60 flex items-center justify-between text-[11px] font-label-mono text-on-surface-subtle">
+                        <span>WA: 082198487319</span>
+                        <span class="text-[#2d3545]">•</span>
+                        <span>naufal.zikri19@gmail.com</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Editorial Running Marquee Tape (Iconic Element from Reference Image) -->
+    <div id="hero-tape"
+        class="w-full overflow-hidden border-y border-[#1c222d] bg-[#0c0e12]/90 backdrop-blur-md py-3.5 my-4 opacity-0 translate-y-6 transition-all duration-700"
+        style="transition-delay: 550ms;">
+        <div class="animate-marquee whitespace-nowrap text-xs sm:text-sm font-label-mono uppercase tracking-[0.2em] text-on-surface-variant">
+            <span class="mx-6 flex items-center gap-4">
+                <span class="text-primary font-black">▪▪</span> NAUFAL ZIKRI HILMY
+                <span class="text-primary font-black">▪▪</span> FRESH GRADUATE S1 SISTEM INFORMASI
+                <span class="text-primary font-black">▪▪</span> TELKOM UNIVERSITY PURWOKERTO
+                <span class="text-primary font-black">▪▪</span> IPK 3.82 (DENGAN PUJIAN)
+                <span class="text-primary font-black">▪▪</span> CERTIFIED WEB DEVELOPER (BNSP CWDev)
+                <span class="text-primary font-black">▪▪</span> GUMBREGQUICKBOOK (LARAVEL + GEMINI AI)
+                <span class="text-primary font-black">▪▪</span> SIRIMBY (ODOO ERP INTEGRATION)
+                <span class="text-primary font-black">▪▪</span> OPEN FOR WORK (FULL-TIME &amp; MAGANG)
+            </span>
+            <span class="mx-6 flex items-center gap-4" aria-hidden="true">
+                <span class="text-primary font-black">▪▪</span> NAUFAL ZIKRI HILMY
+                <span class="text-primary font-black">▪▪</span> FRESH GRADUATE S1 SISTEM INFORMASI
+                <span class="text-primary font-black">▪▪</span> TELKOM UNIVERSITY PURWOKERTO
+                <span class="text-primary font-black">▪▪</span> IPK 3.82 (DENGAN PUJIAN)
+                <span class="text-primary font-black">▪▪</span> CERTIFIED WEB DEVELOPER (BNSP CWDev)
+                <span class="text-primary font-black">▪▪</span> GUMBREGQUICKBOOK (LARAVEL + GEMINI AI)
+                <span class="text-primary font-black">▪▪</span> SIRIMBY (ODOO ERP INTEGRATION)
+                <span class="text-primary font-black">▪▪</span> OPEN FOR WORK (FULL-TIME &amp; MAGANG)
             </span>
         </div>
+    </div>
 
-        <!-- Main Headline -->
-        <h1 id="hero-name"
-            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-headline-md font-bold text-on-surface mb-4 sm:mb-5 max-w-5xl mx-auto leading-tight opacity-0 translate-y-8 transition-all duration-700"
-            style="transition-delay: 250ms;">
-            Naufal Zikri <span
-                class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-emerald-400 to-primary bg-[length:200%_auto] animate-[gradient-shift_3s_linear_infinite]">Hilmy</span>
-        </h1>
-
-        <!-- Typewriter Role -->
-        <div id="hero-role"
-            class="mb-6 sm:mb-8 opacity-0 translate-y-8 transition-all duration-700 flex items-center justify-center gap-2 sm:gap-3"
-            style="transition-delay: 400ms;">
-            <span class="w-2 h-2 rounded-full bg-primary animate-pulse shrink-0"></span>
-            <span class="font-label-mono text-base sm:text-lg md:text-xl text-on-surface-variant">
-                <span id="typewriter-text"></span><span id="typewriter-cursor"
-                    class="inline-block w-0.5 h-5 bg-primary ml-0.5 align-middle animate-[blink_1s_step-end_infinite]"></span>
+    <!-- Editorial Quick Index of Selected Works (Directly below tape) -->
+    <div id="hero-index"
+        class="max-w-container-max mx-auto px-gutter relative z-10 w-full mt-6 opacity-0 translate-y-6 transition-all duration-700"
+        style="transition-delay: 700ms;">
+        <div class="flex items-center justify-between mb-4 pb-2 border-b border-[#1c222d]">
+            <span class="font-label-mono text-xs text-on-surface-subtle uppercase tracking-widest flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-primary"></span>
+                SELECTED WORK INDEX // 2026
             </span>
+            <span class="font-label-mono text-xs text-on-surface-subtle hidden sm:inline">2 LIVE PRODUCTION PLATFORMS</span>
         </div>
 
-        <!-- Description -->
-        <p id="hero-desc"
-            class="font-body-md text-sm sm:text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mb-10 sm:mb-12 px-2 leading-relaxed opacity-0 translate-y-8 transition-all duration-700"
-            style="transition-delay: 550ms;">
-            Fresh graduate <span class="text-on-surface font-medium">S1 Sistem Informasi</span> yang tertarik pada
-            <span class="text-on-surface font-medium">web development</span>,
-            <span class="text-on-surface font-medium">rekayasa perangkat lunak</span>, dan
-            <span class="text-on-surface font-medium">integrasi AI</span> siap berkontribusi dan terus belajar.
-        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Index Item 1: Gumbreg -->
+            <div class="group p-5 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-[#2d3545] transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between text-xs font-label-mono text-on-surface-subtle mb-2">
+                        <span class="text-primary font-bold">01 // APLIKASI WEB RESERVASI</span>
+                        <a href="https://gumbreg.my.id/" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-primary transition-colors flex items-center gap-1">
+                            <span>gumbreg.my.id</span>
+                            <span class="material-symbols-outlined text-xs">open_in_new</span>
+                        </a>
+                    </div>
+                    <div class="font-headline-md text-lg sm:text-xl font-bold text-white group-hover:text-primary transition-colors">
+                        GumbregQuickBook
+                    </div>
+                    <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                        Sistem reservasi online end-to-end terintegrasi basis data MySQL, manajemen slot real-time, dan Google Gemini AI Chatbot.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-[#1c222d] flex items-center justify-between">
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 rounded bg-[#13171f] text-[11px] font-label-mono text-on-surface-subtle">Laravel</span>
+                        <span class="px-2 py-0.5 rounded bg-[#13171f] text-[11px] font-label-mono text-on-surface-subtle">MySQL</span>
+                        <span class="px-2 py-0.5 rounded bg-primary/10 text-primary border border-primary/20 text-[11px] font-label-mono font-semibold">Gemini AI</span>
+                    </div>
+                    <a href="{{ url('/project/gumbreg') }}" class="text-xs font-label-mono text-primary font-semibold hover:underline flex items-center gap-1">
+                        <span>Studi Kasus</span>
+                        <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
 
-        <!-- CTA Buttons -->
-        <div id="hero-cta"
-            class="flex flex-col sm:flex-row gap-3.5 sm:gap-4 mb-12 sm:mb-16 w-full sm:w-auto max-w-xs sm:max-w-none justify-center opacity-0 translate-y-8 transition-all duration-700"
-            style="transition-delay: 700ms;">
-            <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-primary text-on-primary font-body-md font-bold hover:scale-95 hover:brightness-110 transition-all duration-300 shadow-lg shadow-primary/25 text-sm sm:text-base"
-                href="#contact">
-                <span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">mail</span>
-                Hubungi Saya
-            </a>
-            <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-surface-container/50 text-on-surface border border-outline-variant hover:border-primary/50 font-body-md font-semibold glass-panel glass-panel-hover hover:scale-95 transition-all duration-300 text-sm sm:text-base"
-                href="#projects">
-                <span class="material-symbols-outlined text-base">folder_open</span>
-                Lihat Proyek
-            </a>
+            <!-- Index Item 2: Sirimby -->
+            <div class="group p-5 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-[#2d3545] transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between text-xs font-label-mono text-on-surface-subtle mb-2">
+                        <span class="text-primary font-bold">02 // SISTEM ERP USAHA LOKAL</span>
+                        <a href="https://sirimby.org/" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-primary transition-colors flex items-center gap-1">
+                            <span>sirimby.org</span>
+                            <span class="material-symbols-outlined text-xs">open_in_new</span>
+                        </a>
+                    </div>
+                    <div class="font-headline-md text-lg sm:text-xl font-bold text-white group-hover:text-primary transition-colors">
+                        Sirimby - Fresh Milk
+                    </div>
+                    <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                        Implementasi Odoo ERP terpadu untuk digitalisasi rantai pasok harian, penilaian stok inventaris, dan operasional penjualan.
+                    </p>
+                </div>
+                <div class="mt-4 pt-3 border-t border-[#1c222d] flex items-center justify-between">
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 rounded bg-[#13171f] text-[11px] font-label-mono text-on-surface-subtle">Odoo ERP</span>
+                        <span class="px-2 py-0.5 rounded bg-[#13171f] text-[11px] font-label-mono text-on-surface-subtle">Python</span>
+                        <span class="px-2 py-0.5 rounded bg-[#13171f] text-[11px] font-label-mono text-on-surface-subtle">PostgreSQL</span>
+                    </div>
+                    <a href="{{ url('/project/sirimby') }}" class="text-xs font-label-mono text-primary font-semibold hover:underline flex items-center gap-1">
+                        <span>Studi Kasus</span>
+                        <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <!-- Scroll indicator -->
-        <div
-            class="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-10 opacity-0 animate-[fade-in-up_1s_ease_1.5s_forwards]">
-            <a href="#about"
-                class="flex flex-col items-center gap-2 group text-on-surface-variant hover:text-primary transition-colors">
-                <span class="font-label-mono text-[10px] tracking-widest uppercase">Scroll</span>
-                <span
-                    class="w-px h-8 bg-gradient-to-b from-primary/60 to-transparent group-hover:h-10 transition-all duration-300"></span>
-            </a>
-        </div>
+    </div>
 
 </section>
-
-{{-- Inline styles & scripts for hero --}}
-<style>
-    @keyframes gradient-shift {
-        0% {
-            background-position: 0% center;
-        }
-
-        100% {
-            background-position: 200% center;
-        }
-    }
-
-    @keyframes orb-float {
-
-        0%,
-        100% {
-            transform: translate(0, 0) scale(1);
-        }
-
-        33% {
-            transform: translate(30px, -20px) scale(1.05);
-        }
-
-        66% {
-            transform: translate(-20px, 15px) scale(0.97);
-        }
-    }
-
-    @keyframes blink {
-
-        0%,
-        100% {
-            opacity: 1;
-        }
-
-        50% {
-            opacity: 0;
-        }
-    }
-
-    @keyframes fade-in-up {
-        from {
-            opacity: 0;
-            transform: translateX(-50%) translateY(12px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateX(-50%) translateY(0);
-        }
-    }
-
-    #hero-particles {
-        opacity: 0.6;
-    }
-</style>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         // --- Entrance Animations ---
         const heroEls = [
-            document.getElementById('hero-greeting'),
-            document.getElementById('hero-name'),
-            document.getElementById('hero-role'),
-            document.getElementById('hero-desc'),
-            document.getElementById('hero-cta'),
-            document.getElementById('hero-status'),
+            document.getElementById('hero-top-strip'),
+            document.getElementById('hero-left'),
+            document.getElementById('hero-right'),
+            document.getElementById('hero-tape'),
+            document.getElementById('hero-index'),
         ];
 
         heroEls.forEach(el => {
             if (!el) return;
             const delay = parseInt(el.style.transitionDelay) || 0;
             setTimeout(() => {
-                el.classList.remove('opacity-0', 'translate-y-8');
+                el.classList.remove('opacity-0', 'translate-y-6');
             }, delay);
         });
 
-        // --- Typewriter Effect ---
-        const roles = [
-            'Fresh Graduate Sistem Informasi',
-            'Web Developer',
-            'Laravel & MySQL Enthusiast',
-            'AI Integration Learner',
-            'Open to Work',
-        ];
-
-        const typeEl = document.getElementById('typewriter-text');
-        let roleIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        let typingTimeout;
-
-        function typeWriter() {
-            const currentRole = roles[roleIndex];
-
-            if (isDeleting) {
-                charIndex--;
-                typeEl.textContent = currentRole.substring(0, charIndex);
-            } else {
-                charIndex++;
-                typeEl.textContent = currentRole.substring(0, charIndex);
-            }
-
-            let speed = isDeleting ? 50 : 90;
-
-            if (!isDeleting && charIndex === currentRole.length) {
-                speed = 1800;
-                isDeleting = true;
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                roleIndex = (roleIndex + 1) % roles.length;
-                speed = 400;
-            }
-
-            typingTimeout = setTimeout(typeWriter, speed);
-        }
-
-        // Start typewriter after role line becomes visible
-        setTimeout(typeWriter, 900);
-
-        // --- Particle Canvas ---
+        // --- Lightweight Canvas Particle Network ---
         const canvas = document.getElementById('hero-particles');
         if (!canvas) return;
         const ctx = canvas.getContext('2d');
         let particles = [];
         let animFrame;
-        let W, H;
+        let W = 0, H = 0;
 
         function resizeCanvas() {
-            W = canvas.width = canvas.offsetWidth;
-            H = canvas.height = canvas.offsetHeight;
-        }
-
-        function getRandBetween(min, max) {
-            return Math.random() * (max - min) + min;
+            W = canvas.width = canvas.parentElement.offsetWidth;
+            H = canvas.height = canvas.parentElement.offsetHeight;
         }
 
         function createParticle() {
             return {
-                x: getRandBetween(0, W),
-                y: getRandBetween(0, H),
-                radius: getRandBetween(0.8, 2.5),
-                vx: getRandBetween(-0.3, 0.3),
-                vy: getRandBetween(-0.5, -0.1),
-                alpha: getRandBetween(0.1, 0.6),
-                alphaDir: getRandBetween(0.001, 0.004),
+                x: Math.random() * W,
+                y: Math.random() * H,
+                radius: Math.random() * 1.5 + 0.5,
+                vx: (Math.random() - 0.5) * 0.35,
+                vy: (Math.random() - 0.5) * 0.35,
+                alpha: Math.random() * 0.4 + 0.1,
             };
         }
 
-        function initParticles(count = 90) {
+        function initParticles(count = 45) {
             particles = Array.from({ length: count }, createParticle);
         }
 
         function drawParticles() {
             ctx.clearRect(0, 0, W, H);
 
-            // Draw connection lines
+            // Connect nearby nodes
             for (let i = 0; i < particles.length; i++) {
                 for (let j = i + 1; j < particles.length; j++) {
                     const dx = particles[i].x - particles[j].x;
                     const dy = particles[i].y - particles[j].y;
                     const dist = Math.sqrt(dx * dx + dy * dy);
-                    if (dist < 120) {
+                    if (dist < 110) {
                         ctx.beginPath();
-                        ctx.strokeStyle = `rgba(0, 229, 115, ${0.12 * (1 - dist / 120)})`;
+                        ctx.strokeStyle = `rgba(251, 249, 244, ${0.08 * (1 - dist / 110)})`;
                         ctx.lineWidth = 0.5;
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
@@ -260,21 +326,19 @@
                 }
             }
 
-            // Draw dots
+            // Draw nodes
             particles.forEach(p => {
-                p.alpha += p.alphaDir;
-                if (p.alpha >= 0.65 || p.alpha <= 0.05) p.alphaDir *= -1;
-
                 p.x += p.vx;
                 p.y += p.vy;
 
-                if (p.y < -10) { p.y = H + 10; p.x = getRandBetween(0, W); }
-                if (p.x < -10) { p.x = W + 10; }
-                if (p.x > W + 10) { p.x = -10; }
+                if (p.x < 0) p.x = W;
+                if (p.x > W) p.x = 0;
+                if (p.y < 0) p.y = H;
+                if (p.y > H) p.y = 0;
 
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(0, 229, 115, ${p.alpha})`;
+                ctx.fillStyle = `rgba(251, 249, 244, ${p.alpha})`;
                 ctx.fill();
             });
 
@@ -282,12 +346,11 @@
         }
 
         resizeCanvas();
-        initParticles();
+        initParticles(window.innerWidth < 768 ? 25 : 50);
         drawParticles();
 
         window.addEventListener('resize', () => {
             resizeCanvas();
-            initParticles();
         });
     });
 </script>

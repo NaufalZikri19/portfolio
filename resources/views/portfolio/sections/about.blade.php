@@ -1,176 +1,126 @@
-<!-- About Section -->
+<!-- About Section (Dark Editorial / Asymmetric Two-Column Spread) -->
 <section class="py-section-gap relative" id="about">
     <div class="max-w-container-max mx-auto px-gutter relative z-10">
-        <!-- Section Header -->
-        <div class="text-center mb-16 flex flex-col items-center reveal-up">
-            <div
-                class="mb-4 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-surface/50 backdrop-blur-md">
-                <span class="material-symbols-outlined text-primary text-sm"
-                    style="font-variation-settings: 'FILL' 1;">person</span>
-                <span class="font-label-mono text-label-mono text-on-surface-variant">Tentang Saya</span>
+
+        <!-- Section Header (No Eyebrow Kicker, Direct Editorial Hierarchy) -->
+        <div class="border-b border-[#1c222d] pb-6 mb-12 sm:mb-16 flex flex-col md:flex-row md:items-end justify-between gap-4 reveal-up">
+            <div>
+                <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-[0.25em] block mb-2">
+                    SECTION // 01 • BIOGRAPHY &amp; VALUE
+                </span>
+                <h2 class="font-headline-md font-black text-3xl sm:text-4xl md:text-5xl uppercase text-white tracking-tight">
+                    PROFIL &amp; FONDASI PROFESIONAL
+                </h2>
             </div>
-            <h2 class="font-headline-md text-2xl sm:text-3xl md:text-headline-md text-on-surface mb-3 sm:mb-4">Profil
-                Singkat &amp; Dedikasi Profesional
-            </h2>
-            <p
-                class="font-body-md text-xs sm:text-sm md:text-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-                Membangun solusi perangkat lunak yang andal dengan perpaduan analisis sistem informasi, arsitektur
-                backend kokoh, dan integrasi Artificial Intelligence.
-            </p>
+            <div class="font-label-mono text-xs text-on-surface-subtle md:text-right max-w-sm">
+                S1 SISTEM INFORMASI (TELKOM UNIVERSITY) • IPK 3.82 (PUJIAN) • BNSP CWDev CERTIFIED
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
-            <!-- Left Card: Story & Bio -->
-            <div class="lg:col-span-7 glass-panel rounded-3xl p-6 sm:p-8 md:p-10 flex flex-col justify-between border border-white/5 relative overflow-hidden group reveal-up"
-                style="transition-delay: 100ms">
-                <div
-                    class="absolute -top-24 -right-24 w-60 h-60 bg-primary/10 rounded-full blur-3xl pointer-events-none">
-                </div>
+        <!-- Asymmetrical Editorial Spread -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
 
-                <div>
-                    <div class="flex items-center gap-3 mb-5 sm:mb-6">
-                        <div class="w-3 h-3 rounded-full bg-primary animate-ping"></div>
-                        <span class="font-label-mono text-xs uppercase tracking-wider text-primary font-semibold">Profil
-                            Lulusan</span>
+            <!-- Left Column (60%): Editorial Narrative & Core Competencies -->
+            <div class="lg:col-span-7 flex flex-col gap-6 reveal-up" style="transition-delay: 150ms;">
+                <div class="p-6 sm:p-8 md:p-10 rounded-2xl bg-[#0c0e12] border border-[#1c222d]">
+                    <div class="flex items-center gap-2 mb-6 text-xs font-label-mono text-primary font-bold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                        RINGKASAN EKSEKUTIF
                     </div>
 
-                    <h3
-                        class="font-headline-sm text-xl sm:text-2xl md:text-3xl font-bold text-on-surface mb-4 sm:mb-5 leading-snug">
-                        Halo! Saya <span class="text-primary">Naufal Zikri Hilmy</span>
+                    <h3 class="font-headline-md font-extrabold text-2xl sm:text-3xl text-white mb-6 leading-snug">
+                        Menghubungkan <span class="text-primary font-bold">Analisis Bisnis</span> dengan <span class="text-primary font-bold">Rekayasa Web Andal</span>.
                     </h3>
 
-                    <p class="font-body-md text-on-surface-variant leading-relaxed mb-5">
-                        Saya adalah lulusan <strong class="text-on-surface font-semibold">S1 Sistem Informasi dari
-                            Universitas Telkom Purwokerto</strong> (IPK <span
-                            class="text-primary font-bold">3.82</span>) yang memiliki ketertarikan kuat pada bidang
-                        <span class="text-on-surface font-medium">web development, software engineering,</span> dan
-                        <span class="text-on-surface font-medium">integrasi Artificial Intelligence (AI)</span>.
-                    </p>
+                    <div class="space-y-4 font-body-md text-sm sm:text-base text-on-surface-variant leading-relaxed">
+                        <p>
+                            Saya adalah lulusan <strong class="text-white font-semibold">S1 Sistem Informasi dari Universitas Telkom Purwokerto</strong> dengan Indeks Prestasi Kumulatif <strong class="text-white font-semibold font-label-mono">3.82 / 4.00 (Dengan Pujian)</strong> dan pemegang sertifikasi kompetensi nasional <strong class="text-white font-semibold">BNSP Certified Web Developer (CWDev)</strong>.
+                        </p>
 
-                    <p class="font-body-md text-on-surface-variant leading-relaxed mb-5">
-                        Selama masa perkuliahan, saya aktif merancang dan mengeksekusi proyek pengembangan aplikasi web
-                        end-to-end. Salah satunya adalah <strong
-                            class="text-on-surface font-semibold">GumbregQuickBook</strong>, di mana saya bertanggung
-                        jawab atas perancangan arsitektur sistem, pengembangan fitur berbasis <span
-                            class="text-primary font-medium">Laravel &amp; MySQL</span>, integrasi <span
-                            class="text-primary font-medium">Google Gemini AI Chatbot</span>, hingga tahap live
-                        deployment. Selain itu, saya juga berpengalaman dalam analisis proses bisnis dan konfigurasi
-                        alur ERP menggunakan <strong class="text-on-surface font-semibold">Odoo</strong>.
-                    </p>
+                        <p>
+                            Fokus keahlian saya terletak pada perancangan arsitektur backend kokoh menggunakan <strong class="text-white font-semibold">Laravel &amp; MySQL</strong>, integrasi kecerdasan buatan berbasis <strong class="text-white font-semibold">Google Gemini AI</strong>, serta analisis dan kustomisasi alur rantai pasok pada platform enterprise <strong class="text-white font-semibold">Odoo ERP</strong>.
+                        </p>
 
-                    <p class="font-body-md text-on-surface-variant leading-relaxed">
-                        Saya merupakan pribadi yang adaptif, berorientasi kuat pada pemecahan masalah
-                        (<em>problem-solving</em>), dan menikmati kolaborasi tim. Terbuka terhadap peluang kerja
-                        profesional maupun program magang lanjutan untuk terus memperluas dampak positif melalui
-                        teknologi digital.
-                    </p>
-                </div>
+                        <p>
+                            Pendekatan kerja saya selalu berakar pada bukti nyata (*evidence-first*). Setiap baris kode dan perancangan skema data diarahkan untuk meniadakan friksi operasional—terbukti dari sistem reservasi <strong class="text-white font-semibold">GumbregQuickBook</strong> yang meniadakan risiko konflik jadwal hingga 0%, serta implementasi ERP pada usaha peternakan lokal <strong class="text-white font-semibold">Sirimby</strong> yang mereduksi beban rekapitulasi manual hingga 40%.
+                        </p>
 
-                <!-- Soft Skills & Work Values Badges -->
-                <div class="mt-8 pt-6 border-t border-white/5">
-                    <span
-                        class="font-label-mono text-xs text-on-surface-variant/80 uppercase tracking-wider block mb-3">Core
-                        Competencies &amp; Soft Skills:</span>
-                    <div class="flex flex-wrap gap-2">
-                        <span
-                            class="px-3.5 py-1.5 rounded-full text-xs font-label-mono bg-surface-bright border border-white/5 text-on-surface hover:border-primary/40 transition-colors flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-xs text-primary">chat</span> Communication
-                            Skills
+                        <p>
+                            Terbuka untuk peluang karir profesional posisi <strong class="text-white font-semibold">Web Developer</strong>, <strong class="text-white font-semibold">Software Engineer</strong>, maupun program magang lanjutan dengan kesiapan berkontribusi langsung.
+                        </p>
+                    </div>
+
+                    <!-- Core Competencies Chips -->
+                    <div class="mt-8 pt-6 border-t border-[#1c222d]">
+                        <span class="font-label-mono text-xs text-on-surface-subtle uppercase tracking-wider block mb-3">
+                            KOMPETENSI INTI:
                         </span>
-                        <span
-                            class="px-3.5 py-1.5 rounded-full text-xs font-label-mono bg-surface-bright border border-white/5 text-on-surface hover:border-primary/40 transition-colors flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-xs text-primary">psychology</span> Problem
-                            Solving
-                        </span>
-                        <span
-                            class="px-3.5 py-1.5 rounded-full text-xs font-label-mono bg-surface-bright border border-white/5 text-on-surface hover:border-primary/40 transition-colors flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-xs text-primary">groups</span> Teamwork &amp;
-                            Kolaboratif
-                        </span>
-                        <span
-                            class="px-3.5 py-1.5 rounded-full text-xs font-label-mono bg-surface-bright border border-white/5 text-on-surface hover:border-primary/40 transition-colors flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-xs text-primary">schedule</span> Time Management
-                        </span>
-                        <span
-                            class="px-3.5 py-1.5 rounded-full text-xs font-label-mono bg-surface-bright border border-white/5 text-on-surface hover:border-primary/40 transition-colors flex items-center gap-1.5">
-                            <span class="material-symbols-outlined text-xs text-primary">tune</span> Adaptif &amp; Fast
-                            Learner
-                        </span>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Analisis Proses Bisnis</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Arsitektur Laravel 12</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Optimasi Basis Data MySQL</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Implementasi Odoo ERP</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Integrasi Google Gemini AI</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Clean &amp; Maintainable Code</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Column: Key Metrics & Certification Highlight -->
-            <div class="lg:col-span-5 flex flex-col gap-4 sm:gap-6 justify-between">
-                <!-- Card 1: Academic Metric -->
-                <div class="glass-panel rounded-3xl p-5 sm:p-6 md:p-8 border border-white/5 hover:border-primary/30 transition-all duration-300 relative overflow-hidden group reveal-up"
-                    style="transition-delay: 200ms">
-                    <div class="flex items-start justify-between mb-3 sm:mb-4">
-                        <div
-                            class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shrink-0">
-                            <span class="material-symbols-outlined text-xl sm:text-2xl">school</span>
-                        </div>
-                        <span
-                            class="px-2.5 sm:px-3 py-1 rounded-full bg-primary/20 text-primary font-label-mono text-[11px] sm:text-xs font-semibold">2022
-                            - 2026</span>
+            <!-- Right Column (40%): Technical Specification Ledger -->
+            <div class="lg:col-span-5 flex flex-col gap-4 reveal-up" style="transition-delay: 250ms;">
+                <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] crosshair shadow-xl">
+                    <div class="flex items-center justify-between pb-4 border-b border-[#1c222d] text-xs font-label-mono">
+                        <span class="text-primary font-bold uppercase tracking-wider">SPESIFIKASI KREDENSIAL</span>
+                        <span class="text-on-surface-subtle font-mono">// 2026</span>
                     </div>
-                    <div class="text-2xl sm:text-3xl md:text-4xl font-headline-md font-bold text-on-surface mb-1">
-                        IPK 3.82 <span class="text-xs sm:text-sm font-normal text-on-surface-variant font-label-mono">/
-                            4.00</span>
-                    </div>
-                    <div class="font-headline-sm text-sm sm:text-base font-semibold text-primary mb-2">Universitas
-                        Telkom
-                        Purwokerto</div>
-                    <p class="font-body-md text-xs text-on-surface-variant leading-relaxed">
-                        Program Studi S1 Sistem Informasi. Mendalami analisis kebutuhan bisnis, perancangan basis data,
-                        rekayasa perangkat lunak, dan integrasi sistem.
-                    </p>
-                </div>
 
-                <!-- Card 2: BNSP Certification Highlight -->
-                <div class="glass-panel rounded-3xl p-5 sm:p-6 md:p-8 border border-primary/30 bg-gradient-to-br from-primary/5 via-surface to-surface hover:border-primary/60 transition-all duration-300 relative overflow-hidden group reveal-up"
-                    style="transition-delay: 300ms">
-                    <div class="flex items-start justify-between gap-2 mb-3 sm:mb-4">
-                        <div
-                            class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-[#00e573]/20 border border-primary/40 flex items-center justify-center text-primary shrink-0">
-                            <span class="material-symbols-outlined text-xl sm:text-2xl"
-                                style="font-variation-settings: 'FILL' 1;">verified</span>
+                    <!-- Ledger Rows -->
+                    <div class="divide-y divide-[#1c222d] text-xs font-label-mono">
+                        <div class="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <span class="text-on-surface-subtle uppercase">Pendidikan Sarjana:</span>
+                            <span class="text-white font-semibold text-right">S1 Sistem Informasi</span>
                         </div>
-                        <span
-                            class="px-2.5 sm:px-3 py-1 rounded-full bg-primary/20 text-primary font-label-mono text-[10px] sm:text-xs font-semibold uppercase tracking-wider whitespace-nowrap">Sertifikasi
-                            Resmi</span>
+                        <div class="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <span class="text-on-surface-subtle uppercase">Institusi:</span>
+                            <span class="text-white font-semibold text-right">Telkom University Purwokerto</span>
+                        </div>
+                        <div class="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <span class="text-on-surface-subtle uppercase">Indeks Prestasi Kumulatif:</span>
+                            <span class="text-primary font-bold text-sm text-right">3.82 / 4.00 (Dengan Pujian)</span>
+                        </div>
+                        <div class="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <span class="text-on-surface-subtle uppercase">Sertifikasi Profesi:</span>
+                            <span class="text-white font-semibold text-right">BNSP Certified Web Developer</span>
+                        </div>
+                        <div class="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <span class="text-on-surface-subtle uppercase">Spesialisasi Teknis:</span>
+                            <span class="text-white font-semibold text-right">Full-stack Web &amp; ERP Odoo</span>
+                        </div>
+                        <div class="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <span class="text-on-surface-subtle uppercase">Domisili:</span>
+                            <span class="text-white font-medium text-right">Purwokerto, Banyumas, ID</span>
+                        </div>
+                        <div class="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <span class="text-on-surface-subtle uppercase">Status Ketersediaan:</span>
+                            <span class="text-primary font-bold text-right">Siap Bekerja Segera</span>
+                        </div>
                     </div>
-                    <div class="font-headline-sm text-base sm:text-lg md:text-xl font-bold text-on-surface mb-1">
-                        Pengembang Web / Web Developer (CWDev)
-                    </div>
-                    <div class="font-label-mono text-[11px] sm:text-xs text-primary mb-2.5 sm:mb-3">
-                        Badan Nasional Sertifikasi Profesi (BNSP) &bull; LSP Informatika
-                    </div>
-                    <p class="font-body-md text-xs text-on-surface-variant leading-relaxed">
-                        Tersertifikasi standar kompetensi nasional pada bidang pengembangan perangkat lunak dan
-                        pemrograman web profesional.
-                    </p>
-                </div>
 
-                <!-- Card 3: Operation & Base -->
-                <div class="glass-panel rounded-3xl p-4 sm:p-6 border border-white/5 hover:border-primary/30 transition-all duration-300 flex items-center justify-between reveal-up"
-                    style="transition-delay: 400ms">
-                    <div class="flex items-center gap-3 sm:gap-4">
-                        <div
-                            class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-surface-bright flex items-center justify-center text-primary shrink-0">
-                            <span class="material-symbols-outlined text-lg sm:text-xl">location_on</span>
-                        </div>
+                    <!-- Direct Contact Access Box -->
+                    <div class="mt-6 p-4 rounded-xl bg-[#13171f] border border-[#2d3545] flex items-center justify-between">
                         <div>
-                            <span
-                                class="font-label-mono text-[10px] sm:text-[11px] text-on-surface-variant uppercase tracking-wider block">Domisili
-                                &amp; Lokasi</span>
-                            <span class="font-body-md text-xs sm:text-sm font-semibold text-on-surface">Purwokerto,
-                                Banyumas</span>
+                            <span class="text-[11px] font-label-mono text-on-surface-subtle block uppercase">Jalur Rekrutmen Cepat</span>
+                            <span class="text-xs font-semibold text-white">082198487319</span>
                         </div>
+                        <a href="#contact" class="px-4 py-2 rounded-full bg-primary text-on-primary font-body-md font-bold text-xs uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all">
+                            Kontak →
+                        </a>
                     </div>
-                    <span class="w-2.5 h-2.5 rounded-full bg-primary shrink-0"></span>
                 </div>
             </div>
+
         </div>
+
     </div>
 </section>

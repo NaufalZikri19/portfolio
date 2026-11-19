@@ -1,157 +1,138 @@
-<!-- Tech Stack & Keterampilan Section -->
+<!-- Tech Stack & Keterampilan Section (Technical Competencies Matrix) -->
 <section class="py-section-gap relative" id="techstack">
-    <div class="max-w-5xl mx-auto px-gutter">
-        <div class="text-center mb-12 sm:mb-16 flex flex-col items-center reveal-up">
-            <div
-                class="mb-4 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-surface/50 backdrop-blur-md">
-                <span class="material-symbols-outlined text-primary text-sm"
-                    style="font-variation-settings: 'FILL' 1;">terminal</span>
-                <span class="font-label-mono text-label-mono text-on-surface-variant">Tech Stack &amp; Tools</span>
-            </div>
-            <h2 class="font-headline-md text-2xl sm:text-3xl md:text-headline-md text-on-surface mb-3 sm:mb-4">Teknologi
-                &amp; Keterampilan Utama</h2>
-            <p
-                class="font-body-md text-xs sm:text-sm md:text-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-                Kombinasi bahasa pemrograman, framework modern, teknologi kecerdasan buatan, sistem enterprise, dan
-                instrumen operasional yang saya gunakan untuk mewujudkan solusi digital teruji.
-            </p>
-        </div>
+    <div class="max-w-container-max mx-auto px-gutter relative z-10">
 
-        <!-- Tech Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-8">
-            <!-- Item 1: Laravel / PHP -->
-            <div class="glass-panel p-4 sm:p-6 rounded-2xl flex flex-col items-center justify-center text-center group hover:border-primary/50 transition-all duration-300 reveal-up"
-                style="transition-delay: 100ms">
-                <div
-                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-surface-bright flex items-center justify-center mb-2.5 sm:mb-3 group-hover:scale-110 transition-transform">
-                    <span
-                        class="material-symbols-outlined text-2xl sm:text-3xl text-on-surface-variant group-hover:text-primary transition-colors">code</span>
-                </div>
-                <h3 class="font-headline-sm text-xs sm:text-sm font-bold text-on-surface mb-0.5 sm:mb-1">Laravel &amp;
-                    PHP</h3>
-                <span class="font-label-mono text-[10px] sm:text-[11px] text-on-surface-variant">Backend &amp; Web
-                    Engine</span>
+        <!-- Section Header -->
+        <div class="border-b border-[#1c222d] pb-6 mb-12 sm:mb-16 flex flex-col md:flex-row md:items-end justify-between gap-4 reveal-up">
+            <div>
+                <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-[0.25em] block mb-2">
+                    SECTION // 04 • TECHNICAL ARCHITECTURE &amp; TOOLS
+                </span>
+                <h2 class="font-headline-md font-black text-3xl sm:text-4xl md:text-5xl uppercase text-white tracking-tight">
+                    MATRIKS TEKNOLOGI &amp; KAPABILITAS
+                </h2>
             </div>
-
-            <!-- Item 2: Gemini AI Integration -->
-            <div class="glass-panel p-4 sm:p-6 rounded-2xl flex flex-col items-center justify-center text-center group hover:border-primary/50 transition-all duration-300 reveal-up border-primary/20"
-                style="transition-delay: 150ms">
-                <div
-                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-2.5 sm:mb-3 group-hover:scale-110 transition-transform">
-                    <span
-                        class="material-symbols-outlined text-2xl sm:text-3xl text-primary transition-colors">smart_toy</span>
-                </div>
-                <h3 class="font-headline-sm text-xs sm:text-sm font-bold text-on-surface mb-0.5 sm:mb-1">Google Gemini
-                    AI</h3>
-                <span class="font-label-mono text-[10px] sm:text-[11px] text-primary">Chatbot &amp; AI
-                    Integration</span>
-            </div>
-
-            <!-- Item 3: MySQL & SQL -->
-            <div class="glass-panel p-4 sm:p-6 rounded-2xl flex flex-col items-center justify-center text-center group hover:border-primary/50 transition-all duration-300 reveal-up"
-                style="transition-delay: 200ms">
-                <div
-                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-surface-bright flex items-center justify-center mb-2.5 sm:mb-3 group-hover:scale-110 transition-transform">
-                    <span
-                        class="material-symbols-outlined text-2xl sm:text-3xl text-on-surface-variant group-hover:text-primary transition-colors">database</span>
-                </div>
-                <h3 class="font-headline-sm text-xs sm:text-sm font-bold text-on-surface mb-0.5 sm:mb-1">MySQL &amp; SQL
-                    Query</h3>
-                <span class="font-label-mono text-[10px] sm:text-[11px] text-on-surface-variant">JOIN &bull; Data
-                    Manipulation</span>
-            </div>
-
-            <!-- Item 4: Odoo ERP -->
-            <div class="glass-panel p-4 sm:p-6 rounded-2xl flex flex-col items-center justify-center text-center group hover:border-primary/50 transition-all duration-300 reveal-up"
-                style="transition-delay: 250ms">
-                <div
-                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-surface-bright flex items-center justify-center mb-2.5 sm:mb-3 group-hover:scale-110 transition-transform">
-                    <span
-                        class="material-symbols-outlined text-2xl sm:text-3xl text-on-surface-variant group-hover:text-primary transition-colors">view_quilt</span>
-                </div>
-                <h3 class="font-headline-sm text-xs sm:text-sm font-bold text-on-surface mb-0.5 sm:mb-1">Odoo ERP</h3>
-                <span class="font-label-mono text-[10px] sm:text-[11px] text-on-surface-variant">Enterprise
-                    Architecture</span>
-            </div>
-
-            <!-- Item 5: Tailwind CSS & Frontend -->
-            <div class="glass-panel p-4 sm:p-6 rounded-2xl flex flex-col items-center justify-center text-center group hover:border-primary/50 transition-all duration-300 reveal-up"
-                style="transition-delay: 300ms">
-                <div
-                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-surface-bright flex items-center justify-center mb-2.5 sm:mb-3 group-hover:scale-110 transition-transform">
-                    <span
-                        class="material-symbols-outlined text-2xl sm:text-3xl text-on-surface-variant group-hover:text-primary transition-colors">palette</span>
-                </div>
-                <h3 class="font-headline-sm text-xs sm:text-sm font-bold text-on-surface mb-0.5 sm:mb-1">Tailwind CSS
-                    &amp; JS</h3>
-                <span class="font-label-mono text-[10px] sm:text-[11px] text-on-surface-variant">Modern &amp; Responsive
-                    UI</span>
-            </div>
-
-            <!-- Item 6: Microsoft Office -->
-            <div class="glass-panel p-4 sm:p-6 rounded-2xl flex flex-col items-center justify-center text-center group hover:border-primary/50 transition-all duration-300 reveal-up"
-                style="transition-delay: 350ms">
-                <div
-                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-surface-bright flex items-center justify-center mb-2.5 sm:mb-3 group-hover:scale-110 transition-transform">
-                    <span
-                        class="material-symbols-outlined text-2xl sm:text-3xl text-on-surface-variant group-hover:text-primary transition-colors">table_chart</span>
-                </div>
-                <h3 class="font-headline-sm text-xs sm:text-sm font-bold text-on-surface mb-0.5 sm:mb-1">Microsoft
-                    Office</h3>
-                <span class="font-label-mono text-[10px] sm:text-[11px] text-on-surface-variant">Excel, Word &amp;
-                    PowerPoint</span>
-            </div>
-
-            <!-- Item 7: Git & Deployment -->
-            <div class="glass-panel p-4 sm:p-6 rounded-2xl flex flex-col items-center justify-center text-center group hover:border-primary/50 transition-all duration-300 reveal-up"
-                style="transition-delay: 400ms">
-                <div
-                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-surface-bright flex items-center justify-center mb-2.5 sm:mb-3 group-hover:scale-110 transition-transform">
-                    <span
-                        class="material-symbols-outlined text-2xl sm:text-3xl text-on-surface-variant group-hover:text-primary transition-colors">terminal</span>
-                </div>
-                <h3 class="font-headline-sm text-xs sm:text-sm font-bold text-on-surface mb-0.5 sm:mb-1">Git &amp;
-                    Deployment</h3>
-                <span class="font-label-mono text-[10px] sm:text-[11px] text-on-surface-variant">Version Control &amp;
-                    Server</span>
-            </div>
-
-            <!-- Item 8: Telco & PLC Base Unit -->
-            <div class="glass-panel p-4 sm:p-6 rounded-2xl flex flex-col items-center justify-center text-center group hover:border-primary/50 transition-all duration-300 reveal-up"
-                style="transition-delay: 450ms">
-                <div
-                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-surface-bright flex items-center justify-center mb-2.5 sm:mb-3 group-hover:scale-110 transition-transform">
-                    <span
-                        class="material-symbols-outlined text-2xl sm:text-3xl text-on-surface-variant group-hover:text-primary transition-colors">router</span>
-                </div>
-                <h3 class="font-headline-sm text-xs sm:text-sm font-bold text-on-surface mb-0.5 sm:mb-1">STO &amp; PLC
-                    Module</h3>
-                <span class="font-label-mono text-[10px] sm:text-[11px] text-on-surface-variant">Network &amp;
-                    Infrastructure</span>
+            <div class="font-label-mono text-xs text-on-surface-subtle md:text-right max-w-sm">
+                STANDAR TEKNOLOGI MODERN UNTUK SISTEM STABIL, SKALABEL, DAN MUDAH DILACAK
             </div>
         </div>
 
-        <!-- Soft Skills Bottom Strip -->
-        <div class="glass-panel rounded-2xl p-4 sm:p-6 border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left reveal-up"
-            style="transition-delay: 500ms">
-            <div class="flex flex-col sm:flex-row items-center gap-3">
-                <div
-                    class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
-                    <span class="material-symbols-outlined">handshake</span>
-                </div>
+        <!-- 4-Tier Matrix Grid (Asymmetric & Informative, No Generic Icon Cards) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+
+            <!-- Tier 01: Backend & Database -->
+            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-[#2d3545] transition-all duration-300 flex flex-col justify-between reveal-up">
                 <div>
-                    <span
-                        class="font-label-mono text-[11px] sm:text-xs text-primary font-semibold uppercase tracking-wider block">Keterampilan
-                        Interpersonal:</span>
-                    <span class="font-body-md text-xs sm:text-sm text-on-surface">Communication Skills &bull; Problem
-                        Solving
-                        &bull; Teamwork &bull; Time Management</span>
+                    <div class="flex items-center justify-between pb-3 mb-4 border-b border-[#1c222d] text-xs font-label-mono">
+                        <span class="text-primary font-bold uppercase tracking-wider">TIER 01 // CORE BACKEND</span>
+                        <span class="text-on-surface-subtle">SISTEM BASIS DATA</span>
+                    </div>
+
+                    <h3 class="font-headline-md font-bold text-xl sm:text-2xl text-white mb-2">
+                        Backend &amp; Database Architecture
+                    </h3>
+
+                    <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mb-6">
+                        Merancang fondasi server yang kokoh, arsitektur MVC modular, keamanan otorisasi Role-Based Access Control (RBAC), serta pemodelan skema relasional dengan kueri SQL teroptimasi tinggi.
+                    </p>
+                </div>
+
+                <div class="pt-4 border-t border-[#1c222d]">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Laravel 12</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">PHP 8.2+</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">MySQL Relational</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">PostgreSQL</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">RESTful API</span>
+                    </div>
                 </div>
             </div>
-            <a href="#contact"
-                class="w-full sm:w-auto text-center px-5 py-2.5 rounded-full border border-primary/30 text-primary text-xs font-label-mono hover:bg-primary hover:text-on-primary transition-all duration-300 whitespace-nowrap">
-                Ajak Kolaborasi &rarr;
-            </a>
+
+            <!-- Tier 02: AI Integration & Enterprise ERP -->
+            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-[#2d3545] transition-all duration-300 flex flex-col justify-between reveal-up" style="transition-delay: 150ms;">
+                <div>
+                    <div class="flex items-center justify-between pb-3 mb-4 border-b border-[#1c222d] text-xs font-label-mono">
+                        <span class="text-primary font-bold uppercase tracking-wider">TIER 02 // INTELLIGENCE &amp; ERP</span>
+                        <span class="text-on-surface-subtle">OTOMASI BISNIS</span>
+                    </div>
+
+                    <h3 class="font-headline-md font-bold text-xl sm:text-2xl text-white mb-2">
+                        AI Integration &amp; Enterprise ERP
+                    </h3>
+
+                    <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mb-6">
+                        Menghubungkan kecerdasan buatan LLM untuk layanan tanya-jawab otomatis 24/7 dan mengkustomisasi alur ERP Odoo untuk digitalisasi rantai pasok, manajemen stok inventaris, dan transaksi kasir (POS).
+                    </p>
+                </div>
+
+                <div class="pt-4 border-t border-[#1c222d]">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-primary text-on-primary font-bold">Google Gemini AI SDK</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-primary text-on-primary font-bold">Odoo ERP</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Python</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Chatbot Workflow</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">POS Integration</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 03: Frontend & UI Craft -->
+            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-[#2d3545] transition-all duration-300 flex flex-col justify-between reveal-up" style="transition-delay: 200ms;">
+                <div>
+                    <div class="flex items-center justify-between pb-3 mb-4 border-b border-[#1c222d] text-xs font-label-mono">
+                        <span class="text-primary font-bold uppercase tracking-wider">TIER 03 // INTERFACE ENGINEERING</span>
+                        <span class="text-on-surface-subtle">KETERBACAAN &amp; AKSESIBILITAS</span>
+                    </div>
+
+                    <h3 class="font-headline-md font-bold text-xl sm:text-2xl text-white mb-2">
+                        Frontend &amp; Responsive UI Craft
+                    </h3>
+
+                    <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mb-6">
+                        Mengutamakan kecepatan render, desain responsif ramah mobile, tipografi proporsional tanpa risiko teks terpotong, serta kepatuhan kontras tinggi (WCAG AAA) bernuansa monokromatik modern.
+                    </p>
+                </div>
+
+                <div class="pt-4 border-t border-[#1c222d]">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Tailwind CSS</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Blade Templating</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">JavaScript (ES6+)</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Vite Bundler</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Semantic HTML5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 04: Development Tools & Operational Workflow -->
+            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-[#2d3545] transition-all duration-300 flex flex-col justify-between reveal-up" style="transition-delay: 250ms;">
+                <div>
+                    <div class="flex items-center justify-between pb-3 mb-4 border-b border-[#1c222d] text-xs font-label-mono">
+                        <span class="text-primary font-bold uppercase tracking-wider">TIER 04 // WORKFLOW &amp; TOOLS</span>
+                        <span class="text-on-surface-subtle">PRODUKTIVITAS KERJA</span>
+                    </div>
+
+                    <h3 class="font-headline-md font-bold text-xl sm:text-2xl text-white mb-2">
+                        Development Workflow &amp; Tools
+                    </h3>
+
+                    <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mb-6">
+                        Disiplin version control, simulasi server pengembangan lokal, pengujian endpoint API terisolasi, serta pengolahan dan rekapitulasi data bisnis terstruktur.
+                    </p>
+                </div>
+
+                <div class="pt-4 border-t border-[#1c222d]">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Git &amp; GitHub</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Laragon Server</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Postman API</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Advanced MS Excel</span>
+                        <span class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Linux Bash</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
     </div>
 </section>
