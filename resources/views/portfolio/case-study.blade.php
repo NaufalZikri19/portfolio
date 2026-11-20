@@ -7,20 +7,20 @@
             
             <!-- Breadcrumb Navigation -->
             <div class="mb-8 flex items-center gap-3 text-xs font-label-mono reveal-up">
-                <a href="{{ url('/') }}" class="text-on-surface-subtle hover:text-primary transition-colors flex items-center gap-1">
+                <a href="{{ url('/') }}" class="text-on-surface-subtle hover:text-accent transition-colors flex items-center gap-1">
                     <span class="material-symbols-outlined text-sm">arrow_back</span>
                     <span>BERANDA</span>
                 </a>
                 <span class="text-on-surface-subtle">/</span>
-                <span class="text-primary font-semibold uppercase">STUDI KASUS PROYEK</span>
+                <span class="text-accent font-semibold uppercase">STUDI KASUS PROYEK</span>
             </div>
 
             <!-- Header Monograph -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end pb-8 border-b border-[#1c222d] reveal-up">
                 <div class="lg:col-span-8">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#13171f] border border-[#2d3545] mb-4">
-                        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                        <span class="font-label-mono text-xs text-primary font-semibold uppercase tracking-wider">{{ $project['category'] }}</span>
+                        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                        <span class="font-label-mono text-xs text-accent font-semibold uppercase tracking-wider">{{ $project['category'] }}</span>
                     </div>
                     <h1 class="font-headline-md font-black text-3xl sm:text-5xl md:text-6xl text-white uppercase tracking-tight mb-4">
                         {{ $project['title'] }}
@@ -33,7 +33,7 @@
                 <div class="lg:col-span-4 flex flex-col lg:items-end gap-4">
                     @if(!empty($project['url']))
                         <a href="{{ $project['url'] }}" target="_blank" rel="noopener noreferrer"
-                            class="min-h-[48px] inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-primary text-on-primary font-body-md font-bold text-xs uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all w-full sm:w-auto">
+                            class="min-h-[48px] inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-accent text-on-accent font-body-md font-bold text-xs uppercase tracking-wider hover:bg-accent-hover active:scale-95 transition-all w-full sm:w-auto">
                             <span>Kunjungi Website Live</span>
                             <span class="material-symbols-outlined text-base">open_in_new</span>
                         </a>
@@ -87,7 +87,7 @@
             <!-- 01 Overview -->
             <div class="p-6 sm:p-10 rounded-2xl bg-[#0c0e12] border border-[#1c222d] reveal-up">
                 <div class="flex items-center gap-3 mb-6 pb-4 border-b border-[#1c222d]">
-                    <span class="font-label-mono text-xs text-primary font-bold">01 // OVERVIEW</span>
+                    <span class="font-label-mono text-xs text-accent font-bold">01 // OVERVIEW</span>
                     <h2 class="font-headline-md font-bold text-xl sm:text-2xl text-white uppercase tracking-tight">
                         Ringkasan Arsitektur &amp; Tujuan
                     </h2>
@@ -113,7 +113,7 @@
             <!-- 03 Solution -->
             <div class="p-6 sm:p-10 rounded-2xl bg-[#0c0e12] border border-[#1c222d] reveal-up">
                 <div class="flex items-center gap-3 mb-6 pb-4 border-b border-[#1c222d]">
-                    <span class="font-label-mono text-xs text-primary font-bold">03 // ENGINEERING SOLUTION</span>
+                    <span class="font-label-mono text-xs text-accent font-bold">03 // ENGINEERING SOLUTION</span>
                     <h2 class="font-headline-md font-bold text-xl sm:text-2xl text-white uppercase tracking-tight">
                         Solusi Teknis yang Diterapkan
                     </h2>
@@ -126,7 +126,7 @@
             <!-- 04 Impact -->
             <div class="p-6 sm:p-10 rounded-2xl bg-[#13171f] border border-[#2d3545] reveal-up">
                 <div class="flex items-center gap-3 mb-6 pb-4 border-b border-[#2d3545]">
-                    <span class="font-label-mono text-xs text-primary font-bold">04 // MEASURABLE OUTCOMES</span>
+                    <span class="font-label-mono text-xs text-accent font-bold">04 // MEASURABLE OUTCOMES</span>
                     <h2 class="font-headline-md font-bold text-xl sm:text-2xl text-white uppercase tracking-tight">
                         Dampak &amp; Hasil Terukur
                     </h2>
@@ -142,18 +142,18 @@
     <!-- Bottom Editorial Call to Action -->
     <section class="py-16 bg-[#060709] border-t border-[#1c222d]">
         <div class="max-w-container-max mx-auto px-gutter text-center reveal-up">
-            <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-[0.2em] block mb-3">
+            <span class="font-label-mono text-xs text-accent font-bold uppercase tracking-[0.2em] block mb-3">
                 TERTARIK MENGEMBANGKAN SISTEM SERUPA?
             </span>
             <h3 class="font-headline-md font-black text-2xl sm:text-4xl text-white uppercase tracking-tight mb-8">
                 DISKUSIKAN KEBUTUHAN ARSITEKTUR DIGITAL ANDA
             </h3>
             <div class="flex flex-wrap items-center justify-center gap-4">
-                <a class="min-h-[48px] inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-primary text-on-primary font-body-md font-bold text-xs uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all"
+                <a class="min-h-[48px] inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-accent text-on-accent font-body-md font-bold text-xs uppercase tracking-wider hover:bg-accent-hover active:scale-95 transition-all"
                     href="{{ url('/#contact') }}">
                     Mulai Diskusi Sekarang
                 </a>
-                <a class="min-h-[48px] inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#13171f] text-white border border-[#2d3545] hover:border-primary font-body-md font-semibold text-xs uppercase tracking-wider active:scale-95 transition-all"
+                <a class="min-h-[48px] inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#13171f] text-white border border-[#2d3545] hover:border-accent font-body-md font-semibold text-xs uppercase tracking-wider active:scale-95 transition-all"
                     href="{{ url('/#projects') }}">
                     &larr; Kembali ke Daftar Portofolio
                 </a>

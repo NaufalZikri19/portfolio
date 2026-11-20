@@ -5,7 +5,7 @@
         <!-- Section Header -->
         <div class="border-b border-[#1c222d] pb-6 mb-12 sm:mb-16 flex flex-col md:flex-row md:items-end justify-between gap-4 reveal-up">
             <div>
-                <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-[0.25em] block mb-2">
+                <span class="font-label-mono text-xs text-accent font-bold uppercase tracking-[0.25em] block mb-2">
                     SECTION // 03 • PROVEN PRODUCTION PLATFORMS
                 </span>
                 <h2 class="font-headline-md font-black text-3xl sm:text-4xl md:text-5xl uppercase text-white tracking-tight">
@@ -19,23 +19,23 @@
 
         <div class="flex flex-col gap-12 sm:gap-16">
 
-            <!-- Project 01: GumbregQuickBook (7-Col Text, 5-Col Visual) -->
-            <div class="rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-[#2d3545] transition-all duration-500 overflow-hidden reveal-up">
+            <!-- Project 01: GumbregQuickBook (Balanced Copy and Preview) -->
+            <div class="rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-500 overflow-hidden reveal-up">
                 <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
                     
                     <!-- Content Column (Left) -->
-                    <div class="lg:col-span-7 p-6 sm:p-8 md:p-12 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-[#1c222d]">
+                    <div class="lg:col-span-6 p-6 sm:p-8 md:p-10 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-[#1c222d]">
                         <div>
                             <!-- Header metadata bar -->
                             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-[#1c222d]">
-                                <span class="px-2.5 py-0.5 rounded-full bg-[#13171f] border border-[#2d3545] font-label-mono text-xs text-primary font-semibold uppercase tracking-wider">
+                                <span class="px-2.5 py-0.5 rounded-full bg-[#13171f] border border-accent/35 font-label-mono text-xs text-accent font-semibold uppercase tracking-wider">
                                     01 // APLIKASI WEB RESERVASI
                                 </span>
                                 <a href="https://gumbreg.my.id/" target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center gap-1.5 text-xs font-label-mono text-on-surface-subtle hover:text-primary transition-colors group/ext">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                                    class="inline-flex items-center gap-1.5 text-xs font-label-mono text-on-surface-subtle hover:text-accent transition-colors group/ext">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span>
                                     <span>gumbreg.my.id</span>
-                                    <span class="material-symbols-outlined text-[13px] group-hover/ext:translate-x-0.5 group-hover/ext:-translate-y-0.5 transition-transform">open_in_new</span>
+                                    <span class="material-symbols-outlined text-sm group-hover/ext:translate-x-0.5 group-hover/ext:-translate-y-0.5 transition-transform">open_in_new</span>
                                 </a>
                             </div>
 
@@ -69,12 +69,12 @@
                         <!-- Action Buttons -->
                         <div class="flex flex-wrap items-center gap-4 pt-4 border-t border-[#1c222d]">
                             <a href="https://gumbreg.my.id/" target="_blank" rel="noopener noreferrer"
-                                class="min-h-[44px] inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-primary text-on-primary font-body-md font-bold text-xs uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all">
+                                class="min-h-[48px] inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-accent text-on-accent font-body-md font-bold text-xs uppercase tracking-wider hover:bg-accent-hover active:scale-95 transition-all">
                                 <span>Kunjungi Website</span>
                                 <span class="material-symbols-outlined text-sm">open_in_new</span>
                             </a>
                             <a href="{{ url('/project/gumbreg') }}"
-                                class="min-h-[44px] inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#13171f] text-white border border-[#2d3545] hover:border-primary font-body-md font-semibold text-xs uppercase tracking-wider active:scale-95 transition-all">
+                                class="min-h-[48px] inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#13171f] text-white border border-[#2d3545] hover:border-accent font-body-md font-semibold text-xs uppercase tracking-wider active:scale-95 transition-all">
                                 <span>Lihat Studi Kasus</span>
                                 <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>
@@ -82,11 +82,11 @@
                     </div>
 
                     <!-- Screenshot Column (Right) -->
-                    <div class="lg:col-span-5 bg-[#060709] p-6 sm:p-8 flex items-center justify-center relative group/img overflow-hidden">
-                        <a href="https://gumbreg.my.id/" target="_blank" rel="noopener noreferrer" class="block w-full h-full relative cursor-pointer" title="Buka gumbreg.my.id">
-                            <img alt="GumbregQuickBook Project Screenshot"
-                                class="w-full h-auto rounded-xl object-cover shadow-2xl transition-transform duration-700 group-hover/img:scale-105 border border-[#1c222d]"
-                                src="{{ asset('images/gumbreg.png') }}" />
+                    <div class="lg:col-span-6 bg-[#060709] p-3 sm:p-4 lg:p-5 flex items-center justify-center relative group/img overflow-hidden">
+                        <a href="https://gumbreg.my.id/" target="_blank" rel="noopener noreferrer" class="block w-full relative cursor-pointer" title="Buka gumbreg.my.id">
+                            <img alt="Tampilan beranda GumbregQuickBook, aplikasi reservasi lapangan tenis"
+                                class="w-full h-auto rounded-xl object-contain shadow-2xl transition-transform duration-700 group-hover/img:scale-[1.02] border border-[#1c222d]"
+                                src="{{ asset('images/gumbreg.png') }}" width="1024" height="464" loading="lazy" decoding="async" />
                             <div class="absolute bottom-4 right-4 px-3 py-1.5 rounded-full bg-[#060709]/90 border border-[#1c222d] text-white text-xs font-label-mono flex items-center gap-1.5 opacity-0 group-hover/img:opacity-100 transition-opacity">
                                 <span>gumbreg.my.id</span>
                                 <span class="material-symbols-outlined text-xs">open_in_new</span>
@@ -98,15 +98,15 @@
             </div>
 
             <!-- Project 02: Sirimby Fresh Milk (Inverted Layout: 5-Col Visual, 7-Col Text) -->
-            <div class="rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-[#2d3545] transition-all duration-500 overflow-hidden reveal-up">
+            <div class="rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-500 overflow-hidden reveal-up">
                 <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
                     
                     <!-- Screenshot Column (Left on Desktop) -->
-                    <div class="lg:col-span-5 order-2 lg:order-1 bg-[#060709] p-6 sm:p-8 flex items-center justify-center relative group/img overflow-hidden border-t lg:border-t-0 lg:border-r border-[#1c222d]">
-                        <a href="https://sirimby.org/" target="_blank" rel="noopener noreferrer" class="block w-full h-full relative cursor-pointer" title="Buka sirimby.org">
-                            <img alt="Sirimby Project Screenshot"
-                                class="w-full h-auto rounded-xl object-cover shadow-2xl transition-transform duration-700 group-hover/img:scale-105 border border-[#1c222d]"
-                                src="{{ asset('images/sirimby.png') }}" />
+                    <div class="lg:col-span-6 order-2 lg:order-1 bg-[#060709] p-3 sm:p-4 lg:p-5 flex items-center justify-center relative group/img overflow-hidden border-t lg:border-t-0 lg:border-r border-[#1c222d]">
+                        <a href="https://sirimby.org/" target="_blank" rel="noopener noreferrer" class="block w-full relative cursor-pointer" title="Buka sirimby.org">
+                            <img alt="Tampilan beranda Sirimby Fresh Milk, sistem digitalisasi usaha peternakan"
+                                class="w-full h-auto rounded-xl object-contain shadow-2xl transition-transform duration-700 group-hover/img:scale-[1.02] border border-[#1c222d]"
+                                src="{{ asset('images/sirimby.png') }}" width="1024" height="465" loading="lazy" decoding="async" />
                             <div class="absolute bottom-4 right-4 px-3 py-1.5 rounded-full bg-[#060709]/90 border border-[#1c222d] text-white text-xs font-label-mono flex items-center gap-1.5 opacity-0 group-hover/img:opacity-100 transition-opacity">
                                 <span>sirimby.org</span>
                                 <span class="material-symbols-outlined text-xs">open_in_new</span>
@@ -115,18 +115,18 @@
                     </div>
 
                     <!-- Content Column (Right on Desktop) -->
-                    <div class="lg:col-span-7 order-1 lg:order-2 p-6 sm:p-8 md:p-12 flex flex-col justify-between">
+                    <div class="lg:col-span-6 order-1 lg:order-2 p-6 sm:p-8 md:p-10 flex flex-col justify-between">
                         <div>
                             <!-- Header metadata bar -->
                             <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-[#1c222d]">
-                                <span class="px-2.5 py-0.5 rounded-full bg-[#13171f] border border-[#2d3545] font-label-mono text-xs text-primary font-semibold uppercase tracking-wider">
+                                <span class="px-2.5 py-0.5 rounded-full bg-[#13171f] border border-accent/35 font-label-mono text-xs text-accent font-semibold uppercase tracking-wider">
                                     02 // SISTEM ENTERPRISE ERP
                                 </span>
                                 <a href="https://sirimby.org/" target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center gap-1.5 text-xs font-label-mono text-on-surface-subtle hover:text-primary transition-colors group/ext">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                                    class="inline-flex items-center gap-1.5 text-xs font-label-mono text-on-surface-subtle hover:text-accent transition-colors group/ext">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span>
                                     <span>sirimby.org</span>
-                                    <span class="material-symbols-outlined text-[13px] group-hover/ext:translate-x-0.5 group-hover/ext:-translate-y-0.5 transition-transform">open_in_new</span>
+                                    <span class="material-symbols-outlined text-sm group-hover/ext:translate-x-0.5 group-hover/ext:-translate-y-0.5 transition-transform">open_in_new</span>
                                 </a>
                             </div>
 
@@ -160,12 +160,12 @@
                         <!-- Action Buttons -->
                         <div class="flex flex-wrap items-center gap-4 pt-4 border-t border-[#1c222d]">
                             <a href="https://sirimby.org/" target="_blank" rel="noopener noreferrer"
-                                class="min-h-[44px] inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-primary text-on-primary font-body-md font-bold text-xs uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all">
+                                class="min-h-[48px] inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-accent text-on-accent font-body-md font-bold text-xs uppercase tracking-wider hover:bg-accent-hover active:scale-95 transition-all">
                                 <span>Kunjungi Website</span>
                                 <span class="material-symbols-outlined text-sm">open_in_new</span>
                             </a>
                             <a href="{{ url('/project/sirimby') }}"
-                                class="min-h-[44px] inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#13171f] text-white border border-[#2d3545] hover:border-primary font-body-md font-semibold text-xs uppercase tracking-wider active:scale-95 transition-all">
+                                class="min-h-[48px] inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#13171f] text-white border border-[#2d3545] hover:border-accent font-body-md font-semibold text-xs uppercase tracking-wider active:scale-95 transition-all">
                                 <span>Lihat Studi Kasus</span>
                                 <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>

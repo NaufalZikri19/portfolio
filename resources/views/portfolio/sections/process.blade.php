@@ -5,7 +5,7 @@
         <!-- Section Header -->
         <div class="border-b border-[#1c222d] pb-6 mb-12 sm:mb-16 flex flex-col md:flex-row md:items-end justify-between gap-4 reveal-up">
             <div>
-                <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-[0.25em] block mb-2">
+                <span class="font-label-mono text-xs text-accent font-bold uppercase tracking-[0.25em] block mb-2">
                     SECTION // 06 • METHODOLOGY &amp; WORKFLOW
                 </span>
                 <h2 class="font-headline-md font-black text-3xl sm:text-4xl md:text-5xl uppercase text-white tracking-tight">
@@ -28,7 +28,7 @@
                         01
                     </span>
                     <div class="flex flex-col">
-                        <span class="font-label-mono text-[11px] text-primary font-bold uppercase tracking-widest">FASE SATU</span>
+                        <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-widest">FASE SATU</span>
                         <span class="font-label-mono text-xs text-on-surface-subtle uppercase">DISCOVERY &amp; SCHEMA</span>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                         02
                     </span>
                     <div class="flex flex-col">
-                        <span class="font-label-mono text-[11px] text-primary font-bold uppercase tracking-widest">FASE DUA</span>
+                        <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-widest">FASE DUA</span>
                         <span class="font-label-mono text-xs text-on-surface-subtle uppercase">ENGINEERING &amp; AI</span>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                         03
                     </span>
                     <div class="flex flex-col">
-                        <span class="font-label-mono text-[11px] text-primary font-bold uppercase tracking-widest">FASE TIGA</span>
+                        <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-widest">FASE TIGA</span>
                         <span class="font-label-mono text-xs text-on-surface-subtle uppercase">DEPLOY &amp; MONITOR</span>
                     </div>
                 </div>

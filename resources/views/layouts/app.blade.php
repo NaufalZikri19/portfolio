@@ -12,7 +12,7 @@
         <!-- Google Fonts: Montserrat (Headlines) & Inter (Body) & Geist Mono / Space Grotesk -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&family=Space+Grotesk:wght@600;700&display=swap"
+        <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
                 rel="stylesheet" />
         <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -37,6 +37,9 @@
                                                 "primary": "#fbf9f4",
                                                 "primary-container": "#242833",
                                                 "on-primary": "#08090b",
+                                                "accent": "#9bb8ff",
+                                                "accent-hover": "#b3c8ff",
+                                                "on-accent": "#080d18",
                                                 "on-primary-container": "#fbf9f4",
                                                 "secondary": "#e2ded4",
                                                 "on-secondary": "#08090b",
@@ -74,7 +77,7 @@
                                                         "sans-serif"
                                                 ],
                                                 "label-mono": [
-                                                        "Geist",
+                                                "Geist Mono",
                                                         "JetBrains Mono",
                                                         "monospace"
                                                 ],
@@ -105,8 +108,8 @@
 
                 /* Text Selection & Caret */
                 ::selection {
-                        background-color: #fbf9f4;
-                        color: #08090b;
+                        background-color: #9bb8ff;
+                        color: #080d18;
                 }
                 input, textarea {
                         caret-color: #fbf9f4;
@@ -119,7 +122,7 @@
                         transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
                 }
                 .editorial-panel:hover {
-                        border-color: #2d3545;
+                        border-color: rgba(155, 184, 255, 0.55);
                 }
 
                 /* Editorial Marquee Tape */
@@ -144,7 +147,7 @@
                         content: '+';
                         position: absolute;
                         font-family: 'Geist Mono', monospace;
-                        font-size: 11px;
+                        font-size: 12px;
                         color: #2d3545;
                         line-height: 1;
                         pointer-events: none;
@@ -161,7 +164,7 @@
                 }
 
                 .glass-panel-hover:hover {
-                        border-color: #2d3545;
+                        border-color: rgba(155, 184, 255, 0.55);
                         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
                 }
 
@@ -171,22 +174,67 @@
                         color-scheme: dark;
                 }
 
-                /* Scroll Reveal Animation */
-                .reveal-up {
-                        opacity: 0;
-                        transform: translateY(32px);
-                        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+                @media (prefers-reduced-motion: reduce) {
+                        html { scroll-behavior: auto; }
                 }
 
-                .reveal-up.is-visible {
+                :where(a, button, input, textarea, select, [tabindex]):focus-visible {
+                        outline: 2px solid #9bb8ff;
+                        outline-offset: 3px;
+                }
+
+                .hero-editorial-bg {
+                        background-image:
+                                radial-gradient(ellipse 32% 34% at 2% 96%, rgba(108, 45, 190, 0.78) 0%, rgba(74, 38, 153, 0.38) 48%, transparent 100%),
+                                radial-gradient(ellipse 54% 82% at 96% 0%, rgba(34, 103, 172, 0.78) 0%, rgba(16, 60, 111, 0.5) 48%, transparent 100%),
+                                linear-gradient(112deg, #041126 0%, #061a34 58%, #06162a 100%);
+                }
+
+                .hero-reference-grid {
+                        display: grid;
+                        grid-template-columns: minmax(0, 1fr);
+                        align-items: center;
+                        gap: 2rem;
+                }
+
+                @media (min-width: 1280px) {
+                        .hero-reference-grid {
+                                grid-template-columns: minmax(0, 0.92fr) minmax(21rem, 1.08fr) minmax(9rem, 0.5fr);
+                                gap: 2rem;
+                        }
+                }
+
+                @media (min-width: 1536px) {
+                        .hero-reference-grid {
+                                gap: 3rem;
+                        }
+                }
+
+                /* Scroll reveals are progressive-enhancement: content remains visible without JS. */
+                .motion-ready .reveal-up {
+                        opacity: 0;
+                        transform: translateY(18px);
+                        transition: opacity 600ms cubic-bezier(0.16, 1, 0.3, 1), transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+                }
+
+                .motion-ready .reveal-up.is-visible {
                         opacity: 1;
                         transform: translateY(0);
+                }
+
+                @media (prefers-reduced-motion: reduce) {
+                        .motion-ready .reveal-up,
+                        .motion-ready .reveal-up.is-visible {
+                                opacity: 1;
+                                transform: none;
+                                transition: none;
+                        }
                 }
         </style>
 </head>
 
 <body
-        class="bg-background text-on-surface font-body-md overflow-x-hidden selection:bg-primary selection:text-on-primary antialiased">
+        class="bg-background text-on-surface font-body-md overflow-x-hidden selection:bg-accent selection:text-on-accent antialiased">
         @include('components.navbar')
         <main>
                 @yield('content')
@@ -205,8 +253,14 @@
                         }
                 });
 
-                // Scroll Reveal Logic
-                document.addEventListener('DOMContentLoaded', () => {
+                // Reveal content when it enters view, while preserving a no-JS fallback.
+                const revealItems = document.querySelectorAll('.reveal-up');
+                const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+                if (motionPreference.matches || !('IntersectionObserver' in window)) {
+                        revealItems.forEach(el => el.classList.add('is-visible'));
+                } else {
+                        document.documentElement.classList.add('motion-ready');
                         const revealObserver = new IntersectionObserver((entries, observer) => {
                                 entries.forEach(entry => {
                                         if (entry.isIntersecting) {
@@ -215,14 +269,12 @@
                                         }
                                 });
                         }, {
-                                threshold: 0.1,
-                                rootMargin: "0px 0px -50px 0px"
+                                threshold: 0.12,
+                                rootMargin: '0px 0px -40px 0px'
                         });
 
-                        document.querySelectorAll('.reveal-up').forEach(el => {
-                                revealObserver.observe(el);
-                        });
-                });
+                        revealItems.forEach(el => revealObserver.observe(el));
+                }
         </script>
 </body>
 

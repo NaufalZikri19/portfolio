@@ -5,7 +5,7 @@
         <!-- Top Row: Brand & Quick Navigation -->
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-[#1c222d]">
             <div>
-                <a class="font-headline-md text-lg sm:text-xl font-black text-white hover:text-primary transition-colors flex items-center tracking-tight uppercase"
+                <a class="font-headline-md text-lg sm:text-xl font-black text-white hover:text-accent transition-colors flex items-center tracking-tight uppercase"
                     href="{{ url('/') }}">
                     NAUFAL ZIKRI HILMY<span class="text-primary text-xl font-black leading-none ml-0.5">.</span>
                 </a>
@@ -16,13 +16,13 @@
 
             <!-- Nav Links -->
             <div class="flex flex-wrap gap-x-6 gap-y-2 text-xs font-label-mono text-on-surface-variant uppercase tracking-wider">
-                <a class="hover:text-primary transition-colors" href="#">Beranda</a>
-                <a class="hover:text-primary transition-colors" href="#about">Tentang</a>
-                <a class="hover:text-primary transition-colors" href="#experience">Pengalaman</a>
-                <a class="hover:text-primary transition-colors" href="#projects">Proyek</a>
-                <a class="hover:text-primary transition-colors" href="#techstack">Tech Stack</a>
-                <a class="hover:text-primary transition-colors" href="#services">Layanan</a>
-                <a class="hover:text-primary transition-colors" href="#contact">Kontak</a>
+                <a class="hover:text-accent transition-colors" href="#">Beranda</a>
+                <a class="hover:text-accent transition-colors" href="#about">Tentang</a>
+                <a class="hover:text-accent transition-colors" href="#experience">Pengalaman</a>
+                <a class="hover:text-accent transition-colors" href="#projects">Proyek</a>
+                <a class="hover:text-accent transition-colors" href="#techstack">Tech Stack</a>
+                <a class="hover:text-accent transition-colors" href="#services">Layanan</a>
+                <a class="hover:text-accent transition-colors" href="#contact">Kontak</a>
             </div>
         </div>
 
@@ -34,13 +34,13 @@
             </div>
 
             <div class="flex items-center gap-4">
-                <a href="https://github.com/NaufalZikri19" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" title="GitHub">GitHub</a>
+                <a href="https://github.com/NaufalZikri19" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors" title="GitHub">GitHub</a>
                 <span class="text-[#2d3545]">&bull;</span>
-                <a href="https://www.linkedin.com/in/naufal-zikri-hilmy-4a37bb251" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" title="LinkedIn">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/naufal-zikri-hilmy-4a37bb251" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors" title="LinkedIn">LinkedIn</a>
                 <span class="text-[#2d3545]">&bull;</span>
-                <a href="https://wa.me/6282198487319" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" title="WhatsApp">WhatsApp</a>
+                <a href="https://wa.me/6282198487319" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors" title="WhatsApp">WhatsApp</a>
                 <span class="text-[#2d3545]">&bull;</span>
-                <a href="mailto:naufal.zikri19@gmail.com" class="hover:text-primary transition-colors" title="Email">Email</a>
+                <a href="mailto:naufal.zikri19@gmail.com" class="hover:text-accent transition-colors" title="Email">Email</a>
             </div>
 
             <div>

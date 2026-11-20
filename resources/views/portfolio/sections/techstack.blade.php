@@ -5,7 +5,7 @@
         <!-- Section Header -->
         <div class="border-b border-[#1c222d] pb-6 mb-12 sm:mb-16 flex flex-col md:flex-row md:items-end justify-between gap-4 reveal-up">
             <div>
-                <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-[0.25em] block mb-2">
+                <span class="font-label-mono text-xs text-accent font-bold uppercase tracking-[0.25em] block mb-2">
                     SECTION // 04 • TECHNICAL ARCHITECTURE &amp; TOOLS
                 </span>
                 <h2 class="font-headline-md font-black text-3xl sm:text-4xl md:text-5xl uppercase text-white tracking-tight">
@@ -21,7 +21,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
 
             <!-- Tier 01: Backend & Database -->
-            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-[#2d3545] transition-all duration-300 flex flex-col justify-between reveal-up">
+            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-300 flex flex-col justify-between reveal-up">
                 <div>
                     <div class="flex items-center justify-between pb-3 mb-4 border-b border-[#1c222d] text-xs font-label-mono">
                         <span class="text-primary font-bold uppercase tracking-wider">TIER 01 // CORE BACKEND</span>
@@ -49,7 +49,7 @@
             </div>
 
             <!-- Tier 02: AI Integration & Enterprise ERP -->
-            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-[#2d3545] transition-all duration-300 flex flex-col justify-between reveal-up" style="transition-delay: 150ms;">
+            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-300 flex flex-col justify-between reveal-up" style="transition-delay: 150ms;">
                 <div>
                     <div class="flex items-center justify-between pb-3 mb-4 border-b border-[#1c222d] text-xs font-label-mono">
                         <span class="text-primary font-bold uppercase tracking-wider">TIER 02 // INTELLIGENCE &amp; ERP</span>
@@ -77,7 +77,7 @@
             </div>
 
             <!-- Tier 03: Frontend & UI Craft -->
-            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-[#2d3545] transition-all duration-300 flex flex-col justify-between reveal-up" style="transition-delay: 200ms;">
+            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-300 flex flex-col justify-between reveal-up" style="transition-delay: 200ms;">
                 <div>
                     <div class="flex items-center justify-between pb-3 mb-4 border-b border-[#1c222d] text-xs font-label-mono">
                         <span class="text-primary font-bold uppercase tracking-wider">TIER 03 // INTERFACE ENGINEERING</span>
@@ -105,7 +105,7 @@
             </div>
 
             <!-- Tier 04: Development Tools & Operational Workflow -->
-            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-[#2d3545] transition-all duration-300 flex flex-col justify-between reveal-up" style="transition-delay: 250ms;">
+            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-300 flex flex-col justify-between reveal-up" style="transition-delay: 250ms;">
                 <div>
                     <div class="flex items-center justify-between pb-3 mb-4 border-b border-[#1c222d] text-xs font-label-mono">
                         <span class="text-primary font-bold uppercase tracking-wider">TIER 04 // WORKFLOW &amp; TOOLS</span>
