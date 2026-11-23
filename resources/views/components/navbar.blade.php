@@ -33,11 +33,10 @@
         </nav>
 
         <div class="hidden lg:flex items-center gap-4">
-            <a href="{{ asset('cv/CV-Naufal-Zikri-Hilmy.pdf') }}" target="_blank" rel="noopener noreferrer"
-                aria-label="Unduh atau buka Resume Naufal Zikri Hilmy (PDF)"
-                class="min-h-[38px] inline-flex items-center gap-1.5 px-5 py-2 rounded-full bg-accent text-on-accent font-body-md font-bold text-xs uppercase tracking-wider hover:bg-accent-hover active:scale-95 transition-all shadow-[0_2px_12px_rgba(155,184,255,0.16)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
-                <span>Resume</span>
-                <span class="material-symbols-outlined text-[15px]" aria-hidden="true">open_in_new</span>
+            <a href="#contact"
+                class="min-h-[38px] inline-flex items-center gap-2 px-5 py-2 rounded-full bg-accent text-on-accent font-body-md font-bold text-xs uppercase tracking-wider hover:bg-accent-hover active:scale-95 transition-all shadow-[0_2px_12px_rgba(155,184,255,0.14)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
+                <span>Hubungi Saya</span>
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
             </a>
         </div>
 
@@ -79,15 +78,10 @@
             <a class="mobile-nav-item w-fit font-headline-md text-3xl font-extrabold uppercase tracking-tight text-white transition-all hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 data-section="contact" href="{{ request()->is('/') ? '#contact' : url('/#contact') }}">Kontak</a>
         </nav>
-        <div class="border-t border-[#1c222d] pt-6 pb-8 flex flex-col gap-3">
-            <a href="{{ asset('cv/CV-Naufal-Zikri-Hilmy.pdf') }}" target="_blank" rel="noopener noreferrer"
-                class="min-h-[48px] w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-accent text-on-accent font-body-md font-bold text-xs uppercase tracking-wider hover:bg-accent-hover transition-all shadow-[0_2px_12px_rgba(155,184,255,0.16)]">
-                <span>Buka Resume (PDF)</span>
-                <span class="material-symbols-outlined text-sm" aria-hidden="true">open_in_new</span>
-            </a>
+        <div class="border-t border-[#1c222d] pt-6 pb-8">
             <a href="#contact" data-menu-close-action
-                class="min-h-[44px] w-full inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-[#13171f] text-white border border-[#2d3545] hover:border-accent font-body-md font-semibold text-xs uppercase tracking-wider transition-all">
-                <span>Hubungi Saya</span>
+                class="min-h-[48px] w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-accent text-on-accent font-body-md font-bold text-xs uppercase tracking-wider hover:bg-accent-hover transition-all">
+                <span>Hubungi Saya Sekarang</span>
                 <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
             </a>
         </div>
