@@ -26,14 +26,14 @@
             <div class="lg:col-span-7 flex flex-col gap-6 reveal-up" style="transition-delay: 150ms;">
                 <div class="p-6 sm:p-8 md:p-10 rounded-2xl bg-[#0c0e12] border border-[#1c222d]">
                     <div
-                        class="flex items-center gap-2 mb-6 text-xs font-label-mono text-primary font-bold uppercase tracking-wider">
+                        class="flex items-center gap-2 mb-6 text-xs font-label-mono text-accent font-bold uppercase tracking-wider">
                         <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
                         RINGKASAN EKSEKUTIF
                     </div>
 
                     <h3 class="font-headline-md font-extrabold text-2xl sm:text-3xl text-white mb-6 leading-snug">
-                        Menghubungkan <span class="text-primary font-bold">Analisis Bisnis</span> dengan <span
-                            class="text-primary font-bold">Rekayasa Web Andal</span>.
+                        Menghubungkan <span class="text-accent font-bold">Analisis Bisnis</span> dengan <span
+                            class="text-accent font-bold">Rekayasa Web Andal</span>.
                     </h3>
 
                     <div class="space-y-4 font-body-md text-sm sm:text-base text-on-surface-variant leading-relaxed">
@@ -104,7 +104,7 @@
                 <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] crosshair shadow-xl">
                     <div
                         class="flex items-center justify-between pb-4 border-b border-[#1c222d] text-xs font-label-mono">
-                        <span class="text-primary font-bold uppercase tracking-wider">SPESIFIKASI KREDENSIAL</span>
+                        <span class="text-accent font-bold uppercase tracking-wider">SPESIFIKASI KREDENSIAL</span>
                         <span class="text-on-surface-subtle font-mono">// 2026</span>
                     </div>
 
@@ -120,7 +120,7 @@
                         </div>
                         <div class="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                             <span class="text-on-surface-subtle uppercase">Indeks Prestasi Kumulatif:</span>
-                            <span class="text-primary font-bold text-sm text-right">3.82 / 4.00 (Dengan Pujian)</span>
+                            <span class="text-accent font-bold text-sm text-right">3.82 / 4.00 (Dengan Pujian)</span>
                         </div>
                         <div class="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                             <span class="text-on-surface-subtle uppercase">Sertifikasi Profesi:</span>
@@ -136,7 +136,7 @@
                         </div>
                         <div class="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                             <span class="text-on-surface-subtle uppercase">Status Ketersediaan:</span>
-                            <span class="text-primary font-bold text-right">Siap Bekerja Segera</span>
+                            <span class="text-accent font-bold text-right">Siap Bekerja Segera</span>
                         </div>
                     </div>
 
@@ -150,7 +150,8 @@
                         </div>
                         <a href="#contact"
                             class="min-h-[48px] inline-flex items-center px-4 py-2 rounded-full bg-accent text-on-accent font-body-md font-bold text-xs uppercase tracking-wider hover:bg-accent-hover active:scale-95 transition-all">
-                            Kontak →
+                            Kontak
+                            <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
                         </a>
                     </div>
                 </div>

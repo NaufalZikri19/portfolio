@@ -4,10 +4,11 @@
     <!-- Case Study Editorial Hero -->
     <section class="relative pt-32 pb-16 overflow-hidden border-b border-[#1c222d] bg-[#060709]">
         <div class="max-w-container-max mx-auto px-gutter relative z-10 w-full">
-            
+
             <!-- Breadcrumb Navigation -->
             <div class="mb-8 flex items-center gap-3 text-xs font-label-mono reveal-up">
-                <a href="{{ url('/') }}" class="text-on-surface-subtle hover:text-accent transition-colors flex items-center gap-1">
+                <a href="{{ url('/') }}"
+                    class="text-on-surface-subtle hover:text-accent transition-colors flex items-center gap-1">
                     <span class="material-symbols-outlined text-sm">arrow_back</span>
                     <span>BERANDA</span>
                 </a>
@@ -18,14 +19,17 @@
             <!-- Header Monograph -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end pb-8 border-b border-[#1c222d] reveal-up">
                 <div class="lg:col-span-8">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#13171f] border border-[#2d3545] mb-4">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#13171f] border border-[#2d3545] mb-4">
                         <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-                        <span class="font-label-mono text-xs text-accent font-semibold uppercase tracking-wider">{{ $project['category'] }}</span>
+                        <span
+                            class="font-label-mono text-xs text-accent font-semibold uppercase tracking-wider">{{ $project['category'] }}</span>
                     </div>
-                    <h1 class="font-headline-md font-black text-3xl sm:text-5xl md:text-6xl text-white uppercase tracking-tight mb-4">
+                    <h1
+                        class="font-headline-md font-black text-3xl sm:text-5xl md:text-6xl text-white uppercase tracking-tight mb-4">
                         {{ $project['title'] }}
                     </h1>
-                    <p class="font-body-md text-base sm:text-xl text-primary font-medium leading-relaxed max-w-3xl">
+                    <p class="font-body-md text-base sm:text-xl text-accent font-medium leading-relaxed max-w-3xl">
                         {{ $project['subtitle'] }}
                     </p>
                 </div>
@@ -62,11 +66,14 @@
         <div class="max-w-container-max mx-auto px-gutter reveal-up">
             <div class="rounded-2xl overflow-hidden border border-[#1c222d] bg-[#0c0e12] p-2 sm:p-4">
                 @if(!empty($project['url']))
-                    <a href="{{ $project['url'] }}" target="_blank" rel="noopener noreferrer" class="block relative group cursor-pointer" title="Buka website produksi live">
+                    <a href="{{ $project['url'] }}" target="_blank" rel="noopener noreferrer"
+                        class="block relative group cursor-pointer" title="Buka website produksi live">
                         <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}"
                             class="w-full h-auto rounded-xl object-cover border border-[#1c222d] transition-transform duration-700 group-hover:scale-[1.01]" />
-                        <div class="absolute inset-0 bg-[#060709]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <span class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+                        <div
+                            class="absolute inset-0 bg-[#060709]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span
+                                class="px-5 py-2.5 rounded-full bg-accent text-on-accent font-label-mono text-xs font-bold uppercase tracking-wider flex items-center gap-2">
                                 <span>Buka {{ parse_url($project['url'], PHP_URL_HOST) }}</span>
                                 <span class="material-symbols-outlined text-sm">open_in_new</span>
                             </span>
@@ -83,7 +90,7 @@
     <!-- In-depth Case Study Ledger Breakdown -->
     <section class="py-section-gap bg-[#060709]">
         <div class="max-w-4xl mx-auto px-gutter flex flex-col gap-12 sm:gap-16">
-            
+
             <!-- 01 Overview -->
             <div class="p-6 sm:p-10 rounded-2xl bg-[#0c0e12] border border-[#1c222d] reveal-up">
                 <div class="flex items-center gap-3 mb-6 pb-4 border-b border-[#1c222d]">

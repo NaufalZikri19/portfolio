@@ -77,7 +77,7 @@
                                                         "sans-serif"
                                                 ],
                                                 "label-mono": [
-                                                "Geist Mono",
+                                                        "Geist Mono",
                                                         "JetBrains Mono",
                                                         "monospace"
                                                 ],
@@ -95,13 +95,16 @@
                 ::-webkit-scrollbar {
                         width: 8px;
                 }
+
                 ::-webkit-scrollbar-track {
                         background: #060709;
                 }
+
                 ::-webkit-scrollbar-thumb {
                         background: #1c222d;
                         border-radius: 4px;
                 }
+
                 ::-webkit-scrollbar-thumb:hover {
                         background: #2d3545;
                 }
@@ -111,7 +114,9 @@
                         background-color: #9bb8ff;
                         color: #080d18;
                 }
-                input, textarea {
+
+                input,
+                textarea {
                         caret-color: #fbf9f4;
                 }
 
@@ -121,20 +126,28 @@
                         border: 1px solid #1c222d;
                         transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
                 }
+
                 .editorial-panel:hover {
                         border-color: rgba(155, 184, 255, 0.55);
                 }
 
                 /* Editorial Marquee Tape */
                 @keyframes marquee-scroll {
-                        0% { transform: translateX(0%); }
-                        100% { transform: translateX(-50%); }
+                        0% {
+                                transform: translateX(0%);
+                        }
+
+                        100% {
+                                transform: translateX(-50%);
+                        }
                 }
+
                 .animate-marquee {
                         display: flex;
                         width: max-content;
                         animation: marquee-scroll 24s linear infinite;
                 }
+
                 .animate-marquee:hover {
                         animation-play-state: paused;
                 }
@@ -143,7 +156,9 @@
                 .crosshair {
                         position: relative;
                 }
-                .crosshair::before, .crosshair::after {
+
+                .crosshair::before,
+                .crosshair::after {
                         content: '+';
                         position: absolute;
                         font-family: 'Geist Mono', monospace;
@@ -152,8 +167,16 @@
                         line-height: 1;
                         pointer-events: none;
                 }
-                .crosshair::before { top: -6px; left: -5px; }
-                .crosshair::after { bottom: -6px; right: -5px; }
+
+                .crosshair::before {
+                        top: -6px;
+                        left: -5px;
+                }
+
+                .crosshair::after {
+                        bottom: -6px;
+                        right: -5px;
+                }
 
                 .glass-panel {
                         background: rgba(12, 14, 18, 0.88);
@@ -175,7 +198,9 @@
                 }
 
                 @media (prefers-reduced-motion: reduce) {
-                        html { scroll-behavior: auto; }
+                        html {
+                                scroll-behavior: auto;
+                        }
                 }
 
                 :where(a, button, input, textarea, select, [tabindex]):focus-visible {
@@ -184,10 +209,11 @@
                 }
 
                 .hero-editorial-bg {
+                        background-color: #060709;
                         background-image:
-                                radial-gradient(ellipse 32% 34% at 2% 96%, rgba(108, 45, 190, 0.78) 0%, rgba(74, 38, 153, 0.38) 48%, transparent 100%),
-                                radial-gradient(ellipse 54% 82% at 96% 0%, rgba(34, 103, 172, 0.78) 0%, rgba(16, 60, 111, 0.5) 48%, transparent 100%),
-                                linear-gradient(112deg, #041126 0%, #061a34 58%, #06162a 100%);
+                                radial-gradient(circle at 85% 15%, rgba(155, 184, 255, 0.08) 0%, transparent 45%),
+                                radial-gradient(circle at 10% 90%, rgba(155, 184, 255, 0.04) 0%, transparent 40%),
+                                linear-gradient(180deg, #060709 0%, #0a0c10 100%);
                 }
 
                 .hero-reference-grid {
@@ -210,6 +236,28 @@
                         }
                 }
 
+                /* Lenis Smooth Scroll Styles */
+                html.lenis,
+                html.lenis body {
+                        height: auto;
+                }
+
+                .lenis.lenis-smooth {
+                        scroll-behavior: auto !important;
+                }
+
+                .lenis.lenis-smooth [data-lenis-prevent] {
+                        overscroll-behavior: contain;
+                }
+
+                .lenis.lenis-stopped {
+                        overflow: hidden;
+                }
+
+                .lenis.lenis-smooth iframe {
+                        pointer-events: none;
+                }
+
                 /* Scroll reveals are progressive-enhancement: content remains visible without JS. */
                 .motion-ready .reveal-up {
                         opacity: 0;
@@ -223,14 +271,19 @@
                 }
 
                 @media (prefers-reduced-motion: reduce) {
+
                         .motion-ready .reveal-up,
                         .motion-ready .reveal-up.is-visible {
-                                opacity: 1;
-                                transform: none;
-                                transition: none;
+                                opacity: 1 !important;
+                                transform: none !important;
+                                transition: none !important;
                         }
                 }
         </style>
+        <!-- Lenis & GSAP CDN Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
 
 <body
@@ -240,41 +293,328 @@
                 @yield('content')
         </main>
         @include('components.footer')
-        <!-- Interactive script for header blur effect on scroll -->
+        <!-- Lenis, GSAP & Interactive Script Orchestration -->
         <script>
-                window.addEventListener('scroll', () => {
+                document.addEventListener('DOMContentLoaded', () => {
+                        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
                         const nav = document.getElementById('navbar');
-                        if (window.scrollY > 20) {
-                                nav.classList.add('shadow-md', 'bg-surface/80');
-                                nav.classList.remove('bg-surface/60');
-                        } else {
-                                nav.classList.remove('shadow-md', 'bg-surface/80');
-                                nav.classList.add('bg-surface/60');
+                        const hero = document.getElementById('hero');
+                        const indicatorPill = document.getElementById('nav-indicator-pill');
+                        const desktopNavLinks = document.querySelectorAll('#desktop-nav .nav-item');
+                        const mobileNavLinks = document.querySelectorAll('#mobile-menu .mobile-nav-item');
+                        const trackedSections = ['about', 'experience', 'projects', 'techstack', 'services', 'contact'];
+
+                        // ------------------------------------------------------------------
+                        // 1. Navbar Visibility (Hide on Hero, Show when scrolled past Hero)
+                        // ------------------------------------------------------------------
+                        let isNavVisible = null;
+                        const getHeroThreshold = () => {
+                                if (!hero) return 0;
+                                return Math.max(hero.offsetHeight * 0.65, 260);
+                        };
+
+                        const updateNavbarVisibility = (scrollY) => {
+                                if (!nav) return;
+
+                                // On subpages without #hero, keep navbar visible at all times
+                                if (!hero) {
+                                        if (isNavVisible !== true) {
+                                                isNavVisible = true;
+                                                nav.style.pointerEvents = 'auto';
+                                                gsap.set(nav, { y: 0, opacity: 1 });
+                                        }
+                                        return;
+                                }
+
+                                const threshold = getHeroThreshold();
+
+                                if (scrollY > threshold) {
+                                        if (isNavVisible !== true) {
+                                                isNavVisible = true;
+                                                nav.style.pointerEvents = 'auto';
+                                                gsap.to(nav, {
+                                                        y: 0,
+                                                        opacity: 1,
+                                                        duration: prefersReducedMotion ? 0 : 0.35,
+                                                        ease: 'power2.out',
+                                                        overwrite: 'auto'
+                                                });
+                                        }
+                                } else {
+                                        if (isNavVisible !== false) {
+                                                isNavVisible = false;
+                                                gsap.to(nav, {
+                                                        y: prefersReducedMotion ? 0 : -24,
+                                                        opacity: 0,
+                                                        duration: prefersReducedMotion ? 0 : 0.25,
+                                                        ease: 'power2.in',
+                                                        overwrite: 'auto',
+                                                        onComplete: () => {
+                                                                nav.style.pointerEvents = 'none';
+                                                        }
+                                                });
+                                        }
+                                }
+                        };
+
+                        // Initial setup for Navbar Visibility
+                        if (hero) {
+                                const initialScroll = window.scrollY;
+                                const initialThreshold = getHeroThreshold();
+                                if (initialScroll <= initialThreshold) {
+                                        isNavVisible = false;
+                                        nav.style.pointerEvents = 'none';
+                                        gsap.set(nav, { y: prefersReducedMotion ? 0 : -24, opacity: 0 });
+                                } else {
+                                        isNavVisible = true;
+                                        nav.style.pointerEvents = 'auto';
+                                        gsap.set(nav, { y: 0, opacity: 1 });
+                                }
+                        } else if (nav) {
+                                isNavVisible = true;
+                                nav.style.pointerEvents = 'auto';
+                                gsap.set(nav, { y: 0, opacity: 1 });
                         }
-                });
 
-                // Reveal content when it enters view, while preserving a no-JS fallback.
-                const revealItems = document.querySelectorAll('.reveal-up');
-                const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+                        // ------------------------------------------------------------------
+                        // 2. Active Section Scroll Spy & Menu Animation
+                        // ------------------------------------------------------------------
+                        let currentActiveSection = null;
 
-                if (motionPreference.matches || !('IntersectionObserver' in window)) {
-                        revealItems.forEach(el => el.classList.add('is-visible'));
-                } else {
-                        document.documentElement.classList.add('motion-ready');
-                        const revealObserver = new IntersectionObserver((entries, observer) => {
-                                entries.forEach(entry => {
-                                        if (entry.isIntersecting) {
-                                                entry.target.classList.add('is-visible');
-                                                observer.unobserve(entry.target);
+                        const updateActiveMenuPill = (targetLink) => {
+                                if (!indicatorPill || !targetLink) return;
+                                const targetLeft = targetLink.offsetLeft;
+                                const targetWidth = targetLink.offsetWidth;
+
+                                gsap.to(indicatorPill, {
+                                        x: targetLeft,
+                                        width: targetWidth,
+                                        opacity: 1,
+                                        duration: prefersReducedMotion ? 0 : 0.32,
+                                        ease: 'power2.out',
+                                        overwrite: 'auto'
+                                });
+                        };
+
+                        const updateScrollSpy = (scrollY) => {
+                                if (!hero) return;
+
+                                const threshold = getHeroThreshold();
+                                let detectedSection = null;
+
+                                // While in hero, no menu item is marked active
+                                if (scrollY > threshold) {
+                                        const scrollTarget = scrollY + 160;
+                                        const docHeight = document.documentElement.scrollHeight;
+                                        const winHeight = window.innerHeight;
+
+                                        // Bottom of page: activate contact
+                                        if (scrollY + winHeight >= docHeight - 60) {
+                                                detectedSection = 'contact';
+                                        } else {
+                                                for (const id of trackedSections) {
+                                                        const el = document.getElementById(id);
+                                                        if (el) {
+                                                                const top = el.offsetTop;
+                                                                const height = el.offsetHeight;
+                                                                if (scrollTarget >= top && scrollTarget < top + height) {
+                                                                        detectedSection = id;
+                                                                        break;
+                                                                }
+                                                        }
+                                                }
+                                                // Handle #process continuum section (mapped to 'services')
+                                                if (!detectedSection) {
+                                                        const processEl = document.getElementById('process');
+                                                        if (processEl) {
+                                                                const top = processEl.offsetTop;
+                                                                const height = processEl.offsetHeight;
+                                                                if (scrollTarget >= top && scrollTarget < top + height) {
+                                                                        detectedSection = 'services';
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+
+                                if (detectedSection !== currentActiveSection) {
+                                        currentActiveSection = detectedSection;
+
+                                        // Animate Desktop Nav Items & Sliding Indicator Pill
+                                        if (currentActiveSection) {
+                                                let matchedDesktopLink = null;
+                                                desktopNavLinks.forEach(link => {
+                                                        if (link.getAttribute('data-section') === currentActiveSection) {
+                                                                matchedDesktopLink = link;
+                                                                link.classList.add('text-accent', 'font-semibold');
+                                                                link.classList.remove('text-on-surface-variant');
+                                                        } else {
+                                                                link.classList.remove('text-accent', 'font-semibold');
+                                                                link.classList.add('text-on-surface-variant');
+                                                        }
+                                                });
+                                                if (matchedDesktopLink) {
+                                                        updateActiveMenuPill(matchedDesktopLink);
+                                                }
+                                        } else {
+                                                if (indicatorPill) {
+                                                        gsap.to(indicatorPill, { opacity: 0, duration: 0.2, overwrite: 'auto' });
+                                                }
+                                                desktopNavLinks.forEach(link => {
+                                                        link.classList.remove('text-accent', 'font-semibold');
+                                                        link.classList.add('text-on-surface-variant');
+                                                });
+                                        }
+
+                                        // Update Mobile Nav Menu Items
+                                        mobileNavLinks.forEach(link => {
+                                                if (currentActiveSection && link.getAttribute('data-section') === currentActiveSection) {
+                                                        link.classList.add('text-accent', 'border-l-4', 'border-accent', 'pl-4');
+                                                        link.classList.remove('text-white', 'pl-0', 'border-l-0');
+                                                } else {
+                                                        link.classList.remove('text-accent', 'border-l-4', 'border-accent', 'pl-4');
+                                                        link.classList.add('text-white', 'pl-0', 'border-l-0');
+                                                }
+                                        });
+                                }
+                        };
+
+                        // Recalculate on Resize
+                        window.addEventListener('resize', () => {
+                                if (currentActiveSection) {
+                                        const activeLink = document.querySelector(`#desktop-nav .nav-item[data-section="${currentActiveSection}"]`);
+                                        if (activeLink) updateActiveMenuPill(activeLink);
+                                }
+                        }, { passive: true });
+
+                        // ------------------------------------------------------------------
+                        // 3. Smooth Scrolling (Lenis) & Scroll Listeners
+                        // ------------------------------------------------------------------
+                        const handleScroll = (scrollY) => {
+                                updateNavbarVisibility(scrollY);
+                                updateScrollSpy(scrollY);
+                        };
+
+                        if (prefersReducedMotion) {
+                                window.addEventListener('scroll', () => handleScroll(window.scrollY), { passive: true });
+                                document.querySelectorAll('.reveal-up').forEach(el => el.classList.add('is-visible'));
+                                handleScroll(window.scrollY);
+                                return;
+                        }
+
+                        let lenis = null;
+                        if (typeof Lenis !== 'undefined') {
+                                lenis = new Lenis({
+                                        duration: 1.1,
+                                        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                                        orientation: 'vertical',
+                                        gestureOrientation: 'vertical',
+                                        smoothWheel: true,
+                                        wheelMultiplier: 1,
+                                        touchMultiplier: 1.5,
+                                });
+
+                                lenis.on('scroll', ({ scroll }) => {
+                                        handleScroll(scroll);
+                                });
+
+                                if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+                                        gsap.registerPlugin(ScrollTrigger);
+                                        lenis.on('scroll', ScrollTrigger.update);
+                                        gsap.ticker.add((time) => {
+                                                lenis.raf(time * 1000);
+                                        });
+                                        gsap.ticker.lagSmoothing(0);
+                                } else {
+                                        function raf(time) {
+                                                lenis.raf(time);
+                                                requestAnimationFrame(raf);
+                                        }
+                                        requestAnimationFrame(raf);
+                                }
+
+                                // Smooth scroll for internal anchor links
+                                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                                        anchor.addEventListener('click', function (e) {
+                                                const targetId = this.getAttribute('href');
+                                                if (targetId && targetId !== '#') {
+                                                        const targetEl = document.querySelector(targetId);
+                                                        if (targetEl) {
+                                                                e.preventDefault();
+                                                                lenis.scrollTo(targetEl, { offset: -64, duration: 1.1 });
+                                                        }
+                                                }
+                                        });
+                                });
+                        } else {
+                                window.addEventListener('scroll', () => handleScroll(window.scrollY), { passive: true });
+                        }
+
+                        // Run initial scroll check
+                        handleScroll(window.scrollY);
+
+                        // ------------------------------------------------------------------
+                        // 4. GSAP Content Scroll Animations
+                        // ------------------------------------------------------------------
+                        if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+                                const heroElements = document.querySelectorAll('#hero .reveal-up');
+                                if (heroElements.length > 0) {
+                                        gsap.fromTo(heroElements,
+                                                { opacity: 0, y: 20 },
+                                                {
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        duration: 0.8,
+                                                        stagger: 0.1,
+                                                        ease: "power2.out",
+                                                        delay: 0.15
+                                                }
+                                        );
+                                }
+
+                                const sections = document.querySelectorAll('section:not(#hero)');
+                                sections.forEach(section => {
+                                        const elements = section.querySelectorAll('.reveal-up');
+                                        if (elements.length > 0) {
+                                                gsap.fromTo(elements,
+                                                        { opacity: 0, y: 22 },
+                                                        {
+                                                                opacity: 1,
+                                                                y: 0,
+                                                                duration: 0.7,
+                                                                stagger: 0.08,
+                                                                ease: "power2.out",
+                                                                scrollTrigger: {
+                                                                        trigger: section,
+                                                                        start: "top 85%",
+                                                                        toggleActions: "play none none none",
+                                                                        once: true
+                                                                }
+                                                        }
+                                                );
                                         }
                                 });
-                        }, {
-                                threshold: 0.12,
-                                rootMargin: '0px 0px -40px 0px'
-                        });
-
-                        revealItems.forEach(el => revealObserver.observe(el));
-                }
+                        } else {
+                                const revealItems = document.querySelectorAll('.reveal-up');
+                                if ('IntersectionObserver' in window) {
+                                        document.documentElement.classList.add('motion-ready');
+                                        const revealObserver = new IntersectionObserver((entries, observer) => {
+                                                entries.forEach(entry => {
+                                                        if (entry.isIntersecting) {
+                                                                entry.target.classList.add('is-visible');
+                                                                observer.unobserve(entry.target);
+                                                        }
+                                                });
+                                        }, {
+                                                threshold: 0.1,
+                                                rootMargin: '0px 0px -40px 0px'
+                                        });
+                                        revealItems.forEach(el => revealObserver.observe(el));
+                                } else {
+                                        revealItems.forEach(el => el.classList.add('is-visible'));
+                                }
+                        }
+                });
         </script>
 </body>
 

@@ -30,7 +30,7 @@
                         class="font-headline-md font-black text-2xl sm:text-3xl text-white group-hover:text-accent transition-colors">
                         2026
                     </span>
-                    <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-wider mt-1">
+                    <span class="font-label-mono text-xs text-accent font-bold uppercase tracking-wider mt-1">
                         Sertifikasi Profesi Nasional
                     </span>
                     <span class="font-label-mono text-xs text-on-surface-subtle mt-0.5">
@@ -45,7 +45,7 @@
                             Certified Web Developer (CWDev)
                         </h3>
                         <span
-                            class="px-3 py-1 rounded-full bg-[#13171f] border border-[#2d3545] font-label-mono text-xs text-primary font-semibold">
+                            class="px-3 py-1 rounded-full bg-[#13171f] border border-[#2d3545] font-label-mono text-xs text-accent font-semibold">
                             Status: Kompeten Terverifikasi
                         </span>
                     </div>
@@ -79,7 +79,7 @@
                         class="font-headline-md font-black text-2xl sm:text-3xl text-white group-hover:text-accent transition-colors">
                         2022 &ndash; 2026
                     </span>
-                    <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-wider mt-1">
+                    <span class="font-label-mono text-xs text-accent font-bold uppercase tracking-wider mt-1">
                         Pendidikan Sarjana (S1)
                     </span>
                     <span class="font-label-mono text-xs text-on-surface-subtle mt-0.5">
@@ -94,7 +94,7 @@
                             S1 Sistem Informasi &bull; IPK 3.82 (Dengan Pujian)
                         </h3>
                         <span
-                            class="px-3 py-1 rounded-full bg-[#13171f] border border-[#2d3545] font-label-mono text-xs text-primary font-semibold">
+                            class="px-3 py-1 rounded-full bg-[#13171f] border border-[#2d3545] font-label-mono text-xs text-accent font-semibold">
                             Predikat: Cum Laude
                         </span>
                     </div>
@@ -133,7 +133,7 @@
                         class="font-headline-md font-black text-2xl sm:text-3xl text-white group-hover:text-accent transition-colors">
                         2021
                     </span>
-                    <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-wider mt-1">
+                    <span class="font-label-mono text-xs text-accent font-bold uppercase tracking-wider mt-1">
                         Pengalaman Industri
                     </span>
                     <span class="font-label-mono text-xs text-on-surface-subtle mt-0.5">
@@ -161,22 +161,22 @@
                     <div
                         class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4 text-xs font-body-md text-on-surface-variant">
                         <div class="p-3 rounded-lg bg-[#0c0e12] border border-[#1c222d] flex items-start gap-2">
-                            <span class="font-label-mono text-primary font-bold mt-0.5">01</span>
+                            <span class="font-label-mono text-accent font-bold mt-0.5">01</span>
                             <span>Menjalankan manipulasi data terstruktur menggunakan kueri SQL presisi (<code>INNER
                                     JOIN</code>, <code>GROUP BY</code>) untuk rekapitulasi data operasional.</span>
                         </div>
                         <div class="p-3 rounded-lg bg-[#0c0e12] border border-[#1c222d] flex items-start gap-2">
-                            <span class="font-label-mono text-primary font-bold mt-0.5">02</span>
+                            <span class="font-label-mono text-accent font-bold mt-0.5">02</span>
                             <span>Mempelajari dan memantau operasional sistem Sentral Telepon Otomat (STO)
                                 telekomunikasi regional.</span>
                         </div>
                         <div class="p-3 rounded-lg bg-[#0c0e12] border border-[#1c222d] flex items-start gap-2">
-                            <span class="font-label-mono text-primary font-bold mt-0.5">03</span>
+                            <span class="font-label-mono text-accent font-bold mt-0.5">03</span>
                             <span>Melakukan inspeksi berkala ruang genset untuk kesiapan suplai daya cadangan
                                 jaringan.</span>
                         </div>
                         <div class="p-3 rounded-lg bg-[#0c0e12] border border-[#1c222d] flex items-start gap-2">
-                            <span class="font-label-mono text-primary font-bold mt-0.5">04</span>
+                            <span class="font-label-mono text-accent font-bold mt-0.5">04</span>
                             <span>Mengikuti pelatihan pemrograman modul Base Unit PLC untuk pemeliharaan
                                 infrastruktur.</span>
                         </div>
@@ -204,7 +204,7 @@
                         class="font-headline-md font-black text-2xl sm:text-3xl text-white group-hover:text-accent transition-colors">
                         2019 &ndash; 2022
                     </span>
-                    <span class="font-label-mono text-xs text-primary font-bold uppercase tracking-wider mt-1">
+                    <span class="font-label-mono text-xs text-accent font-bold uppercase tracking-wider mt-1">
                         Pendidikan Menengah Atas
                     </span>
                     <span class="font-label-mono text-xs text-on-surface-subtle mt-0.5">
