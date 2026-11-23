@@ -10,7 +10,7 @@
   },
   "routes": [
     {
-      "src": "/(build|images|assets)/(.*)",
+      "src": "/(build|images|assets|cv)/(.*)",
       "dest": "/public/$1/$2"
     },
     {
@@ -22,7 +22,7 @@
       "dest": "/public/robots.txt"
     },
     {
-      "src": "/(.*\\.(?:css|js|png|jpg|jpeg|gif|svg|ico|webp|avif|woff|woff2|ttf|eot))",
+      "src": "/(.*\\.(?:css|js|png|jpg|jpeg|gif|svg|ico|webp|avif|woff|woff2|ttf|eot|pdf))",
       "dest": "/public/$1"
     },
     {

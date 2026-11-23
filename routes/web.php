@@ -39,3 +39,15 @@ Route::get('/project/{slug}', function ($slug) use ($projectsData) {
     }
     return view('portfolio.case-study', ['project' => $projectsData[$slug]]);
 });
+
+Route::get('/cv/{filename}', function ($filename) {
+    $path = public_path('cv/' . $filename);
+    if (!file_exists($path)) {
+        abort(404);
+    }
+    return response()->file($path, [
+        'Content-Type' => 'application/pdf',
+        'Content-Disposition' => 'inline; filename="' . $filename . '"',
+        'Cache-Control' => 'public, max-age=86400',
+    ]);
+})->where('filename', '.*\.pdf$');
