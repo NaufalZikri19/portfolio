@@ -220,19 +220,19 @@
                         display: grid;
                         grid-template-columns: minmax(0, 1fr);
                         align-items: center;
-                        gap: 2rem;
+                        gap: 2.5rem;
                 }
 
-                @media (min-width: 1280px) {
+                @media (min-width: 1024px) {
                         .hero-reference-grid {
-                                grid-template-columns: minmax(0, 0.92fr) minmax(21rem, 1.08fr) minmax(9rem, 0.5fr);
-                                gap: 2rem;
+                                grid-template-columns: minmax(0, 1.05fr) minmax(20rem, 0.95fr);
+                                gap: 3rem;
                         }
                 }
 
                 @media (min-width: 1536px) {
                         .hero-reference-grid {
-                                gap: 3rem;
+                                gap: 5rem;
                         }
                 }
 
@@ -557,43 +557,50 @@
                         // 4. GSAP Content Scroll Animations
                         // ------------------------------------------------------------------
                         if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+                                gsap.registerPlugin(ScrollTrigger);
+
                                 const heroElements = document.querySelectorAll('#hero .reveal-up');
                                 if (heroElements.length > 0) {
                                         gsap.fromTo(heroElements,
-                                                { opacity: 0, y: 20 },
+                                                { autoAlpha: 0, y: 16 },
                                                 {
-                                                        opacity: 1,
+                                                        autoAlpha: 1,
                                                         y: 0,
-                                                        duration: 0.8,
-                                                        stagger: 0.1,
+                                                        duration: 0.62,
+                                                        stagger: { amount: 0.12 },
                                                         ease: "power2.out",
-                                                        delay: 0.15
+                                                        overwrite: 'auto',
+                                                        onComplete: () => gsap.set(heroElements, { clearProps: 'opacity,visibility,transform' })
                                                 }
                                         );
                                 }
 
-                                const sections = document.querySelectorAll('section:not(#hero)');
+                                const sections = document.querySelectorAll('#about, #experience, #projects, #techstack, #services, #process, #contact');
                                 sections.forEach(section => {
                                         const elements = section.querySelectorAll('.reveal-up');
                                         if (elements.length > 0) {
                                                 gsap.fromTo(elements,
-                                                        { opacity: 0, y: 22 },
+                                                        { autoAlpha: 0, y: 16 },
                                                         {
-                                                                opacity: 1,
+                                                                autoAlpha: 1,
                                                                 y: 0,
-                                                                duration: 0.7,
-                                                                stagger: 0.08,
+                                                                duration: 0.62,
+                                                                stagger: { amount: Math.min(0.18, elements.length * 0.05) },
                                                                 ease: "power2.out",
+                                                                overwrite: 'auto',
                                                                 scrollTrigger: {
                                                                         trigger: section,
-                                                                        start: "top 85%",
+                                                                        start: "top 82%",
                                                                         toggleActions: "play none none none",
                                                                         once: true
-                                                                }
+                                                                },
+                                                                onComplete: () => gsap.set(elements, { clearProps: 'opacity,visibility,transform' })
                                                         }
                                                 );
                                         }
                                 });
+
+                                window.addEventListener('load', () => ScrollTrigger.refresh(), { once: true });
                         } else {
                                 const revealItems = document.querySelectorAll('.reveal-up');
                                 if ('IntersectionObserver' in window) {
