@@ -1,83 +1,69 @@
-<!-- 4. Services Section (Architectural Capability Pillars) -->
+<!-- Services Section (Clean Structured Minimal) -->
 <section class="py-section-gap relative" id="services">
-    <div class="max-w-container-max mx-auto px-gutter relative z-10">
+    <div class="max-w-container-max mx-auto px-gutter">
 
         <!-- Section Header -->
         <div
-            class="border-b border-[#1c222d] pb-6 mb-12 sm:mb-16 flex flex-col md:flex-row md:items-end justify-between gap-4 reveal-up">
+            class="border-b border-[#1c202a] pb-6 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4 reveal-up">
             <div>
-                <span class="font-label-mono text-xs text-accent font-bold uppercase tracking-[0.25em] block mb-2">
-                    SECTION // 05 • CAPABILITIES &amp; VALUE DELIVERY
+                <span class="font-label-mono text-xs text-accent font-medium uppercase tracking-wider block mb-1">
+                    Layanan
                 </span>
-                <h2
-                    class="font-headline-md font-black text-3xl sm:text-4xl md:text-5xl uppercase text-white tracking-tight">
-                    LAYANAN &amp; SOLUSI REKAYASA
+                <h2 class="font-headline-md font-bold text-2xl sm:text-3xl md:text-4xl text-white tracking-tight">
+                    Solusi Rekayasa &amp; Sistem
                 </h2>
             </div>
             <div class="font-label-mono text-xs text-on-surface-subtle md:text-right max-w-sm">
-                FOKUS PADA EFISIENSI OPERASIONAL, STABILITAS BACKEND, DAN DAMPAK BISNIS NYATA
+                Fokus pada efisiensi operasional, stabilitas backend, dan dampak bisnis nyata
             </div>
         </div>
 
-        <!-- 3 Specialized Pillars -->
+        <!-- 3 Pillars Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
 
-            <!-- Pillar 01: Full-stack Web Architecture -->
+            <!-- Pillar 01: Web App -->
             <div
-                class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-300 flex flex-col justify-between reveal-up">
+                class="p-6 sm:p-8 rounded-lg bg-[#0f1117] border border-[#1c202a] flex flex-col justify-between reveal-up">
                 <div>
-                    <div
-                        class="flex items-center justify-between pb-3 mb-6 border-b border-[#1c222d] text-xs font-label-mono">
-                        <span class="text-accent font-bold uppercase tracking-wider">LAYANAN // 01</span>
-                        <span class="text-on-surface-subtle">WEB APPLICATION</span>
+                    <div class="pb-3 mb-4 border-b border-[#1c202a] text-xs font-label-mono text-on-surface-subtle">
+                        Aplikasi Web
                     </div>
 
-                    <h3 class="font-headline-md font-bold text-xl sm:text-2xl text-white mb-3">
+                    <h3 class="font-headline-md font-bold text-lg sm:text-xl text-white mb-3">
                         Rekayasa Aplikasi Web End-to-End
                     </h3>
 
                     <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mb-6">
-                        Membangun sistem web custom dari arsitektur backend, skema basis data relasional, hingga
+                        Membangun sistem web kustom dari arsitektur backend, skema basis data relasional, hingga
                         antarmuka pengguna responsif yang cepat dan aman.
                     </p>
 
-                    <ul class="space-y-2.5 font-body-md text-xs sm:text-sm text-on-surface-variant mb-6">
-                        <li class="flex items-start gap-2">
-                            <span class="text-accent font-mono text-xs font-bold mt-0.5">▪</span>
-                            <span>Pengembangan aplikasi web berbasis framework <strong>Laravel</strong> &amp;
-                                <strong>MySQL</strong>.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-accent font-mono text-xs font-bold mt-0.5">▪</span>
-                            <span>Penerapan manajemen akses berbasis peran (RBAC) &amp; sistem autentikasi aman.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-accent font-mono text-xs font-bold mt-0.5">▪</span>
-                            <span>Desain antarmuka responsif tanpa glitch dengan Tailwind CSS.</span>
-                        </li>
-                    </ul>
+                    <div class="space-y-2.5 font-body-md text-xs sm:text-sm text-on-surface-variant mb-6">
+                        <div class="text-on-surface-variant">Pengembangan aplikasi web berbasis framework Laravel &amp;
+                            MySQL.</div>
+                        <div class="text-on-surface-variant">Penerapan manajemen akses berbasis peran (RBAC) &amp;
+                            sistem autentikasi aman.</div>
+                        <div class="text-on-surface-variant">Desain antarmuka responsif ramah mobile dengan Tailwind
+                            CSS.</div>
+                    </div>
                 </div>
 
-                <div class="pt-4 border-t border-[#1c222d]">
-                    <a href="#contact"
-                        class="inline-flex items-center gap-1.5 text-xs font-label-mono text-accent font-bold uppercase tracking-wider hover:underline">
-                        <span>Konsultasikan Proyek</span>
-                        <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                <div class="pt-4 border-t border-[#1c202a]">
+                    <a href="#contact" class="text-xs font-label-mono text-accent hover:underline transition-all">
+                        Konsultasikan Kebutuhan
                     </a>
                 </div>
             </div>
 
-            <!-- Pillar 02: Odoo ERP Implementation -->
-            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-300 flex flex-col justify-between reveal-up"
-                style="transition-delay: 150ms;">
+            <!-- Pillar 02: Odoo ERP -->
+            <div
+                class="p-6 sm:p-8 rounded-lg bg-[#0f1117] border border-[#1c202a] flex flex-col justify-between reveal-up">
                 <div>
-                    <div
-                        class="flex items-center justify-between pb-3 mb-6 border-b border-[#1c222d] text-xs font-label-mono">
-                        <span class="text-accent font-bold uppercase tracking-wider">LAYANAN // 02</span>
-                        <span class="text-on-surface-subtle">ENTERPRISE ERP</span>
+                    <div class="pb-3 mb-4 border-b border-[#1c202a] text-xs font-label-mono text-on-surface-subtle">
+                        Sistem Enterprise
                     </div>
 
-                    <h3 class="font-headline-md font-bold text-xl sm:text-2xl text-white mb-3">
+                    <h3 class="font-headline-md font-bold text-lg sm:text-xl text-white mb-3">
                         Implementasi &amp; Kustomisasi Odoo ERP
                     </h3>
 
@@ -86,44 +72,32 @@
                         rekapitulasi data dan kesalahan stok manual.
                     </p>
 
-                    <ul class="space-y-2.5 font-body-md text-xs sm:text-sm text-on-surface-variant mb-6">
-                        <li class="flex items-start gap-2">
-                            <span class="text-accent font-mono text-xs font-bold mt-0.5">▪</span>
-                            <span>Analisis proses bisnis eksisting &amp; pemetaan modul ERP sesuai kebutuhan
-                                riil.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-accent font-mono text-xs font-bold mt-0.5">▪</span>
-                            <span>Konfigurasi modul rantai pasok (Supply Chain), inventaris, dan Point of Sale
-                                (POS).</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-accent font-mono text-xs font-bold mt-0.5">▪</span>
-                            <span>Pelacakan batch produksi harian dan akurasi rekap data keuangan.</span>
-                        </li>
-                    </ul>
+                    <div class="space-y-2.5 font-body-md text-xs sm:text-sm text-on-surface-variant mb-6">
+                        <div class="text-on-surface-variant">Analisis proses bisnis eksisting &amp; pemetaan modul ERP
+                            sesuai kebutuhan.</div>
+                        <div class="text-on-surface-variant">Konfigurasi rantai pasok (Supply Chain), inventaris, dan
+                            Point of Sale (POS).</div>
+                        <div class="text-on-surface-variant">Pelacakan batch produksi harian dan akurasi rekapitulasi
+                            data keuangan.</div>
+                    </div>
                 </div>
 
-                <div class="pt-4 border-t border-[#1c222d]">
-                    <a href="#contact"
-                        class="inline-flex items-center gap-1.5 text-xs font-label-mono text-accent font-bold uppercase tracking-wider hover:underline">
-                        <span>Konsultasikan Kebutuhan ERP</span>
-                        <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                <div class="pt-4 border-t border-[#1c202a]">
+                    <a href="#contact" class="text-xs font-label-mono text-accent hover:underline transition-all">
+                        Konsultasikan Kebutuhan
                     </a>
                 </div>
             </div>
 
-            <!-- Pillar 03: AI Integration & Chatbots -->
-            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-300 flex flex-col justify-between reveal-up"
-                style="transition-delay: 250ms;">
+            <!-- Pillar 03: AI Integration -->
+            <div
+                class="p-6 sm:p-8 rounded-lg bg-[#0f1117] border border-[#1c202a] flex flex-col justify-between reveal-up">
                 <div>
-                    <div
-                        class="flex items-center justify-between pb-3 mb-6 border-b border-[#1c222d] text-xs font-label-mono">
-                        <span class="text-accent font-bold uppercase tracking-wider">LAYANAN // 03</span>
-                        <span class="text-on-surface-subtle">INTELLIGENT SYSTEMS</span>
+                    <div class="pb-3 mb-4 border-b border-[#1c202a] text-xs font-label-mono text-on-surface-subtle">
+                        Kecerdasan Buatan
                     </div>
 
-                    <h3 class="font-headline-md font-bold text-xl sm:text-2xl text-white mb-3">
+                    <h3 class="font-headline-md font-bold text-lg sm:text-xl text-white mb-3">
                         Integrasi Kecerdasan Buatan (AI)
                     </h3>
 
@@ -132,27 +106,19 @@
                         guna memberikan interaksi cerdas otomatis.
                     </p>
 
-                    <ul class="space-y-2.5 font-body-md text-xs sm:text-sm text-on-surface-variant mb-6">
-                        <li class="flex items-start gap-2">
-                            <span class="text-accent font-mono text-xs font-bold mt-0.5">▪</span>
-                            <span>Pembangunan asisten AI chatbot interaktif untuk layanan pelanggan 24/7.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-accent font-mono text-xs font-bold mt-0.5">▪</span>
-                            <span>Prompt engineering berbasis konteks data bisnis agar jawaban akurat &amp; aman.</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-accent font-mono text-xs font-bold mt-0.5">▪</span>
-                            <span>Pemangkasan beban tanya-jawab admin hingga 60% dengan otomatisasi cerdas.</span>
-                        </li>
-                    </ul>
+                    <div class="space-y-2.5 font-body-md text-xs sm:text-sm text-on-surface-variant mb-6">
+                        <div class="text-on-surface-variant">Pembangunan asisten AI chatbot interaktif untuk layanan
+                            informasi 24/7.</div>
+                        <div class="text-on-surface-variant">Prompt engineering berbasis konteks data bisnis agar
+                            jawaban akurat &amp; aman.</div>
+                        <div class="text-on-surface-variant">Pemangkasan beban operasional admin hingga 60% dengan
+                            otomatisasi cerdas.</div>
+                    </div>
                 </div>
 
-                <div class="pt-4 border-t border-[#1c222d]">
-                    <a href="#contact"
-                        class="inline-flex items-center gap-1.5 text-xs font-label-mono text-accent font-bold uppercase tracking-wider hover:underline">
-                        <span>Konsultasikan Integrasi AI</span>
-                        <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                <div class="pt-4 border-t border-[#1c202a]">
+                    <a href="#contact" class="text-xs font-label-mono text-accent hover:underline transition-all">
+                        Konsultasikan Kebutuhan
                     </a>
                 </div>
             </div>

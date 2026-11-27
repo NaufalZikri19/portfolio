@@ -1,164 +1,151 @@
-<!-- Tech Stack & Keterampilan Section (Technical Competencies Matrix) -->
+<!-- Tech Stack Section (Clean Structured Minimal) -->
 <section class="py-section-gap relative" id="techstack">
-    <div class="max-w-container-max mx-auto px-gutter relative z-10">
+    <div class="max-w-container-max mx-auto px-gutter">
 
         <!-- Section Header -->
         <div
-            class="border-b border-[#1c222d] pb-6 mb-12 sm:mb-16 flex flex-col md:flex-row md:items-end justify-between gap-4 reveal-up">
+            class="border-b border-[#1c202a] pb-6 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-4 reveal-up">
             <div>
-                <span class="font-label-mono text-xs text-accent font-bold uppercase tracking-[0.25em] block mb-2">
-                    SECTION // 04 • TECHNICAL ARCHITECTURE &amp; TOOLS
+                <span class="font-label-mono text-xs text-accent font-medium uppercase tracking-wider block mb-1">
+                    Keahlian
                 </span>
-                <h2
-                    class="font-headline-md font-black text-3xl sm:text-4xl md:text-5xl uppercase text-white tracking-tight">
-                    MATRIKS TEKNOLOGI &amp; KAPABILITAS
+                <h2 class="font-headline-md font-bold text-2xl sm:text-3xl md:text-4xl text-white tracking-tight">
+                    Matriks Teknologi &amp; Kapabilitas
                 </h2>
             </div>
             <div class="font-label-mono text-xs text-on-surface-subtle md:text-right max-w-sm">
-                STANDAR TEKNOLOGI MODERN UNTUK SISTEM STABIL, SKALABEL, DAN MUDAH DILACAK
+                Standar teknologi untuk sistem aplikasi web dan proses bisnis yang stabil dan terukur
             </div>
         </div>
 
-        <!-- 4-Tier Matrix Grid (Asymmetric & Informative, No Generic Icon Cards) -->
+        <!-- 4-Category Matrix Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
 
-            <!-- Tier 01: Backend & Database -->
+            <!-- Category 01: Backend & Database -->
             <div
-                class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-300 flex flex-col justify-between reveal-up">
+                class="p-6 sm:p-8 rounded-lg bg-[#0f1117] border border-[#1c202a] flex flex-col justify-between reveal-up">
                 <div>
-                    <div
-                        class="flex items-center justify-between pb-3 mb-4 border-b border-[#1c222d] text-xs font-label-mono">
-                        <span class="text-accent font-bold uppercase tracking-wider">TIER 01 // CORE BACKEND</span>
-                        <span class="text-on-surface-subtle">SISTEM BASIS DATA</span>
+                    <div class="pb-3 mb-4 border-b border-[#1c202a] text-xs font-label-mono text-on-surface-subtle">
+                        Sistem &amp; Basis Data
                     </div>
 
-                    <h3 class="font-headline-md font-bold text-xl sm:text-2xl text-white mb-2">
-                        Backend &amp; Database Architecture
+                    <h3 class="font-headline-md font-bold text-lg sm:text-xl text-white mb-2">
+                        Backend &amp; Arsitektur Basis Data
                     </h3>
 
                     <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mb-6">
                         Merancang fondasi server yang kokoh, arsitektur MVC modular, keamanan otorisasi Role-Based
-                        Access Control (RBAC), serta pemodelan skema relasional dengan kueri SQL teroptimasi tinggi.
+                        Access Control (RBAC), serta pemodelan skema relasional dengan kueri SQL teroptimasi.
                     </p>
                 </div>
 
-                <div class="pt-4 border-t border-[#1c222d]">
+                <div class="pt-4 border-t border-[#1c202a]">
                     <div class="flex flex-wrap gap-2">
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Laravel
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">Laravel
                             12</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">PHP
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">PHP
                             8.2+</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">MySQL
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">MySQL
                             Relational</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">PostgreSQL</span>
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">PostgreSQL</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">RESTful
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">RESTful
                             API</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Tier 02: AI Integration & Enterprise ERP -->
-            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-300 flex flex-col justify-between reveal-up"
-                style="transition-delay: 150ms;">
+            <!-- Category 02: AI & ERP -->
+            <div
+                class="p-6 sm:p-8 rounded-lg bg-[#0f1117] border border-[#1c202a] flex flex-col justify-between reveal-up">
                 <div>
-                    <div
-                        class="flex items-center justify-between pb-3 mb-4 border-b border-[#1c222d] text-xs font-label-mono">
-                        <span class="text-accent font-bold uppercase tracking-wider">TIER 02 // INTELLIGENCE &amp;
-                            ERP</span>
-                        <span class="text-on-surface-subtle">OTOMASI BISNIS</span>
+                    <div class="pb-3 mb-4 border-b border-[#1c202a] text-xs font-label-mono text-on-surface-subtle">
+                        Otomasi &amp; Kecerdasan Sistem
                     </div>
 
-                    <h3 class="font-headline-md font-bold text-xl sm:text-2xl text-white mb-2">
-                        AI Integration &amp; Enterprise ERP
+                    <h3 class="font-headline-md font-bold text-lg sm:text-xl text-white mb-2">
+                        Integrasi AI &amp; Enterprise ERP
                     </h3>
 
                     <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mb-6">
-                        Menghubungkan kecerdasan buatan LLM untuk layanan tanya-jawab otomatis 24/7 dan mengkustomisasi
-                        alur ERP Odoo untuk digitalisasi rantai pasok, manajemen stok inventaris, dan transaksi kasir
-                        (POS).
+                        Menghubungkan model AI untuk layanan informasi otomatis 24/7 dan mengkustomisasi alur ERP Odoo
+                        untuk digitalisasi rantai pasok, manajemen inventaris, dan transaksi kasir (POS).
                     </p>
                 </div>
 
-                <div class="pt-4 border-t border-[#1c222d]">
+                <div class="pt-4 border-t border-[#1c202a]">
                     <div class="flex flex-wrap gap-2">
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-accent text-on-accent font-bold">Google
-                            Gemini AI SDK</span>
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-accent text-on-accent font-medium">Google
+                            Gemini AI</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-accent text-on-accent font-bold">Odoo
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-accent text-on-accent font-medium">Odoo
                             ERP</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Python</span>
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">Python</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Chatbot
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">Chatbot
                             Workflow</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">POS
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">POS
                             Integration</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Tier 03: Frontend & UI Craft -->
-            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-300 flex flex-col justify-between reveal-up"
-                style="transition-delay: 200ms;">
+            <!-- Category 03: Frontend -->
+            <div
+                class="p-6 sm:p-8 rounded-lg bg-[#0f1117] border border-[#1c202a] flex flex-col justify-between reveal-up">
                 <div>
-                    <div
-                        class="flex items-center justify-between pb-3 mb-4 border-b border-[#1c222d] text-xs font-label-mono">
-                        <span class="text-accent font-bold uppercase tracking-wider">TIER 03 // INTERFACE
-                            ENGINEERING</span>
-                        <span class="text-on-surface-subtle">KETERBACAAN &amp; AKSESIBILITAS</span>
+                    <div class="pb-3 mb-4 border-b border-[#1c202a] text-xs font-label-mono text-on-surface-subtle">
+                        Antarmuka Pengguna
                     </div>
 
-                    <h3 class="font-headline-md font-bold text-xl sm:text-2xl text-white mb-2">
-                        Frontend &amp; Responsive UI Craft
+                    <h3 class="font-headline-md font-bold text-lg sm:text-xl text-white mb-2">
+                        Frontend &amp; Rekayasa Antarmuka
                     </h3>
 
                     <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mb-6">
-                        Mengutamakan kecepatan render, desain responsif ramah mobile, tipografi proporsional tanpa
-                        risiko teks terpotong, serta kepatuhan kontras tinggi (WCAG AAA) bernuansa monokromatik modern.
+                        Mengutamakan kecepatan muat, tata letak responsif ramah mobile, tipografi terstruktur tanpa teks
+                        terpotong, serta kepatuhan standar kontras tinggi untuk kenyamanan membaca.
                     </p>
                 </div>
 
-                <div class="pt-4 border-t border-[#1c222d]">
+                <div class="pt-4 border-t border-[#1c202a]">
                     <div class="flex flex-wrap gap-2">
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Tailwind
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">Tailwind
                             CSS</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Blade
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">Blade
                             Templating</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">JavaScript
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">JavaScript
                             (ES6+)</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Vite
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">Vite
                             Bundler</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Semantic
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">Semantic
                             HTML5</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Tier 04: Development Tools & Operational Workflow -->
-            <div class="p-6 sm:p-8 rounded-2xl bg-[#0c0e12] border border-[#1c222d] hover:border-accent/55 transition-all duration-300 flex flex-col justify-between reveal-up"
-                style="transition-delay: 250ms;">
+            <!-- Category 04: Tools & Workflow -->
+            <div
+                class="p-6 sm:p-8 rounded-lg bg-[#0f1117] border border-[#1c202a] flex flex-col justify-between reveal-up">
                 <div>
-                    <div
-                        class="flex items-center justify-between pb-3 mb-4 border-b border-[#1c222d] text-xs font-label-mono">
-                        <span class="text-accent font-bold uppercase tracking-wider">TIER 04 // WORKFLOW &amp;
-                            TOOLS</span>
-                        <span class="text-on-surface-subtle">PRODUKTIVITAS KERJA</span>
+                    <div class="pb-3 mb-4 border-b border-[#1c202a] text-xs font-label-mono text-on-surface-subtle">
+                        Alur Kerja &amp; Perkakas
                     </div>
 
-                    <h3 class="font-headline-md font-bold text-xl sm:text-2xl text-white mb-2">
-                        Development Workflow &amp; Tools
+                    <h3 class="font-headline-md font-bold text-lg sm:text-xl text-white mb-2">
+                        Alat Pengembangan &amp; Operasional
                     </h3>
 
                     <p class="font-body-md text-sm text-on-surface-variant leading-relaxed mb-6">
@@ -167,22 +154,22 @@
                     </p>
                 </div>
 
-                <div class="pt-4 border-t border-[#1c222d]">
+                <div class="pt-4 border-t border-[#1c202a]">
                     <div class="flex flex-wrap gap-2">
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Git
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">Git
                             &amp; GitHub</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Laragon
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">Laragon
                             Server</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Postman
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">Postman
                             API</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Advanced
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">Advanced
                             MS Excel</span>
                         <span
-                            class="px-3 py-1 rounded-md text-xs font-label-mono bg-[#13171f] border border-[#2d3545] text-white font-medium">Linux
+                            class="px-2.5 py-1 rounded text-xs font-label-mono bg-[#161922] border border-[#1c202a] text-white">Linux
                             Bash</span>
                     </div>
                 </div>

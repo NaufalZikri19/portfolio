@@ -1,41 +1,56 @@
+<!-- Hero Section (Clean Structured Minimal) -->
 <section id="hero"
-    class="hero-editorial-bg relative isolate flex min-h-[calc(100svh-4rem)] flex-col justify-center overflow-hidden px-gutter pb-14 pt-24 sm:pb-16 sm:pt-28"
+    class="relative isolate flex min-h-[calc(100svh-4rem)] flex-col justify-center overflow-hidden px-gutter pb-16 pt-24 sm:pb-20 sm:pt-28 border-b border-[#1c202a]"
     aria-labelledby="hero-name">
-    <div class="hero-reference-grid relative z-10 mx-auto w-full max-w-container-max">
-        <div class="order-1 flex min-w-0 flex-col items-start text-left reveal-up">
-            <p class="mb-5 flex flex-wrap items-center gap-x-3 gap-y-1 font-label-mono text-xs font-semibold uppercase tracking-[0.14em] text-on-surface-variant">
-                <span aria-hidden="true" class="h-px w-7 bg-accent"></span>
-                Fresh Graduate S1 Sistem Informasi
-            </p>
+    <div class="mx-auto w-full max-w-container-max">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
 
-            <h1 id="hero-name"
-                class="mb-5 font-headline-md text-4xl font-black leading-[1.05] tracking-tight text-white sm:text-5xl xl:text-6xl">
-                Naufal Zikri Hilmy
-            </h1>
+            <!-- Left / Content Column (7 cols on desktop) -->
+            <div class="lg:col-span-7 flex flex-col items-start text-left reveal-up">
+                <!-- Role Tag -->
+                <div
+                    class="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0f1117] border border-[#1c202a]">
+                    <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+                    <span class="font-label-mono text-xs text-on-surface-variant font-medium">
+                        Fresh Graduate S1 Sistem Informasi
+                    </span>
+                </div>
 
-            <p class="mb-8 max-w-[38ch] font-body-md text-base leading-relaxed text-on-surface-variant sm:text-lg">
-                Menjembatani analisis proses bisnis dengan rekayasa aplikasi web yang siap dipakai — teruji pada sistem
-                reservasi live dan implementasi ERP terintegrasi.
-            </p>
+                <!-- Main Name Headline -->
+                <h1 id="hero-name"
+                    class="mb-4 font-headline-md text-4xl sm:text-5xl xl:text-6xl font-bold tracking-tight text-white leading-[1.08]">
+                    Naufal Zikri Hilmy
+                </h1>
 
-            <div class="flex flex-wrap items-center gap-x-6 gap-y-3">
-                <a href="#contact"
-                    class="min-h-[48px] inline-flex items-center justify-center gap-2.5 rounded-full bg-accent px-7 py-3 font-body-md text-xs font-bold uppercase tracking-wider text-on-accent transition-colors hover:bg-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-                    <span>Hubungi Saya</span>
-                    <span class="material-symbols-outlined text-lg" aria-hidden="true">arrow_forward</span>
-                </a>
-                <a href="#projects"
-                    class="min-h-[48px] inline-flex items-center gap-2 font-body-md text-sm font-semibold text-white underline decoration-[#2d3545] underline-offset-4 transition-colors hover:text-accent hover:decoration-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
-                    <span>Lihat projek live</span>
-                </a>
+                <!-- Brief Bio Narrative -->
+                <p class="mb-8 max-w-[46ch] font-body-md text-base sm:text-lg text-on-surface-variant leading-relaxed">
+                    Menjembatani analisis proses bisnis dengan rekayasa aplikasi web yang siap dipakai teruji pada
+                    sistem reservasi live dan implementasi ERP terintegrasi.
+                </p>
+
+                <!-- Actions: Direct Clean Text -->
+                <div class="flex flex-wrap items-center gap-4 mb-10">
+                    <a href="#contact"
+                        class="min-h-[44px] inline-flex items-center justify-center rounded-full bg-accent px-6 py-2.5 font-body-md text-xs font-semibold tracking-wide text-on-accent transition-colors hover:bg-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
+                        Hubungi Saya
+                    </a>
+                    <a href="#projects"
+                        class="min-h-[44px] inline-flex items-center justify-center rounded-full bg-[#0f1117] border border-[#1c202a] px-6 py-2.5 font-body-md text-xs font-semibold tracking-wide text-white transition-colors hover:border-[#282d3b] hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
+                        Lihat Projek Live
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <figure
-            class="order-2 mx-auto mt-4 aspect-square w-full max-w-[27rem] overflow-hidden rounded-lg border border-[#1c222d] bg-[#0c0e12] reveal-up lg:mt-0 lg:max-w-none">
-            <img src="{{ asset('images/naufal-profile(2).jpeg') }}" alt="Naufal Zikri Hilmy di tepi pantai"
-                class="h-full w-full object-cover object-[50%_100%]" width="1287" height="1716" fetchpriority="high"
-                decoding="async" />
-        </figure>
+            <!-- Right / Portrait Column (5 cols on desktop) -->
+            <div class="lg:col-span-5 flex justify-center lg:justify-end reveal-up">
+                <figure
+                    class="relative w-full max-w-[22rem] sm:max-w-[24rem] aspect-[4/5] overflow-hidden rounded-lg border border-[#1c202a] bg-[#0f1117]">
+                    <img src="{{ asset('images/naufal-profile(2).jpeg') }}" alt="Potret Naufal Zikri Hilmy"
+                        class="h-full w-full object-cover object-[50%_40%]" width="1287" height="1716"
+                        fetchpriority="high" decoding="async" />
+                </figure>
+            </div>
+
+        </div>
     </div>
 </section>
